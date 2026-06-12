@@ -1,5 +1,4 @@
 ﻿doc_code,nhom,nguon_url,ngay_tai,so_dieu,ghi_chu
-LDD-2024,dat-dai,https://xaydungchinhsach.chinhphu.vn/toan-van-luat-dat-dai-119240221224513596.htm,2026-06-12,415,da tai truoc do
 LBH-2025,dan-su,https://xaydungchinhsach.chinhphu.vn/toan-van-luat-so-64-2025-qh15-ban-hanh-van-ban-quy-pham-phap-luat-119250311155839688.htm,2026-06-12,71,da tai truoc do
 ND-102-2024,dat-dai,https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-dinh-102-2024-nd-cp-quy-dinh-chi-tiet-thi-hanh-mot-so-dieu-cua-luat-dat-dai-119240815163801541.htm,2026-06-12,116,da tai truoc do
 ND-35-2022,kcn,https://vbpl.moj.gov.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=158798,2026-06-12,76,da tai truoc do
@@ -11,10 +10,11 @@ ND-82-2018,kcn,https://g7.cdnchinhphu.vn/api/download/stream?Url=tm-8mq6BhNw0Nbr
 ND-31-2021,dau-tu,https://vbpl.moj.gov.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=147720,2026-06-12,137,da tai truoc do
 NQ-136-2024,da-nang,https://xaydungchinhsach.chinhphu.vn/nghi-quyet-136-2024-qh15-ve-to-chuc-chinh-quyen-do-thi-va-thi-diem-mot-so-co-che-chinh-sach-dac-thu-phat-trien-tp-da-nang-119240716154818818.htm,2026-06-12,18,da tai truoc do
 NQ-98-2023,ho-chi-minh,https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-thi-diem-co-che-chinh-sach-dac-thu-phat-trien-tp-hcm-119230707074903999.htm,2026-06-12,13,da tai truoc do
-ND-103-2024,dat-dai,https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-103-2024-nd-cp-42499.htm,2026-06-12,79,da tai truoc do
 ND-291-2025,dat-dai,https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-291-2025-nd-cp-46567.htm,2026-06-12,27,
 ND-239-2025,dau-tu,https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-239-2025-nd-cp-46128.htm,2026-06-12,13,da tai truoc do
-QD-29-2021,dau-tu,PDF scan nguoi dung cung cap (Downloads/QD292021.pdf),2026-06-12,8,"⚠️ AI CHEP TAY tu ban scan — PHAI soat doi chieu truoc khi duyet, dac biet cac con so"
-NQ-259-2025,da-nang,"file .doc nguoi dung cung cap (Downloads/259_2025_QH15_686092.doc), boc bang scripts/doc_extract.py",2026-06-12,3,sua doi NQ 136/2024; hieu luc 12/12/2025; nen doc soat nhanh vi boc heuristic tu .doc
 ND-182-2024,dau-tu,"file .docx nguoi dung cung cap (TVPL 638056), convert python-docx",2026-06-12,53,gom ca bieu mau phu luc; hieu luc 31/12/2024
 NQ-254-2025,dat-dai,"file .docx nguoi dung cung cap (TVPL 684580), convert python-docx",2026-06-12,13,go vuong thi hanh Luat Dat dai; thong qua 11/12/2025
+LDD-2024,dat-dai,"file .docx nguoi dung cung cap (TVPL 523642), convert python-docx",2026-06-12,260,"DUNG 260 Dieu — thay ban xdcs (415, lan muc luc)"
+NQ-259-2025,da-nang,"file .docx nguoi dung cung cap (TVPL 686092), convert python-docx",2026-06-12,3,thay ban boc heuristic tu .doc
+ND-103-2024,dat-dai,"file .docx nguoi dung cung cap (TVPL 550020), convert python-docx",2026-06-12,60,54 Dieu + bieu mau phu luc; thay ban Cong bao gop
+QD-29-2021,dau-tu,"file .docx nguoi dung cung cap (TVPL 490496), convert python-docx",2026-06-12,9,"BAN CHUAN — thay ban AI chep tay (co sai lech, da loai)"
