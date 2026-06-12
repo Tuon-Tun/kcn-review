@@ -38,7 +38,20 @@ SOURCES = {
     "BVMT-2020":   ("moi-truong", "vbpl", "https://vbpl.moj.gov.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=146609"),
     "BLLD-2019":   ("lao-dong",   "pdf",  "https://g7.cdnchinhphu.vn/api/download/stream?Url=tm-8mq6BhNw0NbrKRhTDAQWsKg3tuqaY0aWypnY78U6M2BY68Ekp0Gvvr483flbR6FbDgxmjr7YP7l2i5iv9MsJqGQFD-xZbGNBK3JkpnvSGayQMVOIcKs55w61x8-tj_k9m4S7wnpbBrmQmSPUUoQ~~&file_name=2019_993+%2b+994_45-2019-QH14.pdf"),
     "ND-82-2018":  ("kcn",        "pdf",  "https://g7.cdnchinhphu.vn/api/download/stream?Url=tm-8mq6BhNw0NbrKRhTDAQWsKg3tuqaY0aWypnY78U6M2BY68Ekp0Gvvr483flbRHprCUdHZ1t6IxlBbbMyus0JQwTvP5HcPqbS9oC-fhD_aaT0X3Qm2QY9uD8CWL3FSoCmNV8xI0IqODd1kfORh3A~~&file_name=2018_683+%2b+684_82-2018-N%c4%90-CP.pdf"),
+    # --- Đợt 2: ưu đãi đầu tư, công nghệ cao/bán dẫn, cơ chế đặc thù địa phương ---
+    "ND-31-2021":  ("dau-tu",     "vbpl", "https://vbpl.moj.gov.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=147720"),
+    "NQ-136-2024": ("da-nang",    "xdcs", "https://xaydungchinhsach.chinhphu.vn/nghi-quyet-136-2024-qh15-ve-to-chuc-chinh-quyen-do-thi-va-thi-diem-mot-so-co-che-chinh-sach-dac-thu-phat-trien-tp-da-nang-119240716154818818.htm"),
+    "NQ-98-2023":  ("ho-chi-minh","xdcs", "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-thi-diem-co-che-chinh-sach-dac-thu-phat-trien-tp-hcm-119230707074903999.htm"),
 }
+
+# CHỜ BỔ SUNG — chưa tìm được toàn văn dạng text trên nguồn chính thống
+# (xdcs chỉ có trang tóm tắt; vanban.chinhphu.vn là PDF scan; vbpl chỉ có bản gốc scan).
+# Hướng xử lý: tải .doc từ Công báo rồi convert thủ công, hoặc chờ vbpl cập nhật toàn văn.
+#   ND-239-2025 : Sửa đổi NĐ 31/2021 (hướng dẫn Luật Đầu tư) — QUAN TRỌNG khi tư vấn ưu đãi
+#   ND-182-2024 : Quỹ Hỗ trợ đầu tư (bán dẫn/AI/công nghệ cao)
+#   ND-103-2024 : Tiền sử dụng đất, tiền thuê đất (miễn giảm) — vanban docid 210797 (scan)
+#   QD-29-2021  : Ưu đãi đầu tư đặc biệt (miễn tiền thuê đất 18-22 năm)
+#   NQ-259-2025 : Sửa đổi NQ 136/2024 (Đà Nẵng — thêm ưu đãi Khu TMTD, TOD)
 
 DRAFT_COLS = ["doc_code", "nhom", "nguon_url", "ngay_tai", "so_dieu", "ghi_chu"]
 

@@ -17,7 +17,9 @@ description: Quy trình review hợp đồng KCN 4 bước có kiểm chứng tr
   | Dịch vụ hạ tầng/tiện ích | kcn, dan-su             | moi-truong                             |
   | Gia công / dịch vụ SX    | dan-su                  | lao-dong, dau-tu                       |
   CHỈ grep/đọc file trong các thư mục laws/<nhóm> đã chọn — file ngoài nhóm coi
-  như không tồn tại ở bước này (tiết kiệm token). Gặp dẫn chiếu chéo sang văn bản
+  như không tồn tại ở bước này (tiết kiệm token).
+  + Nhóm ĐỊA PHƯƠNG: HĐ thuộc địa bàn có cơ chế đặc thù (da-nang, ho-chi-minh...)
+  → thêm nhóm địa phương đó vào phạm vi (NQ đặc thù có thể cho ưu đãi khác luật chung). Gặp dẫn chiếu chéo sang văn bản
   ngoài nhóm ở B2 thì mới mở rộng, và ghi rõ lý do mở rộng.
 - Lọc tiếp theo metadata.csv lấy văn bản có hiệu lực tại ngày ký; chọn CHỈ những văn bản
   thực sự liên quan loại HĐ này (HĐ dịch vụ hạ tầng đơn giản không cần Luật Đất
