@@ -1,19 +1,12 @@
-# DỮ LIỆU MẬT — không bao giờ đẩy lên GitHub
-# Hợp đồng là tài liệu bảo mật của KCN và khách hàng
-contracts/inbox/*
-contracts/done/*
-# Báo cáo review chứa nội dung hợp đồng
-reports/*
-# Văn bản luật: file lớn, người dùng tự nạp thủ công từng máy
-laws/*.pdf
-laws/*.txt
-laws/*.docx
-
-# Giữ lại cấu trúc thư mục và file cấu hình
-!contracts/inbox/.gitkeep
-!contracts/done/.gitkeep
-!reports/.gitkeep
-!laws/metadata.csv
+# ⚠️ TẠM MỞ (2026-06-12) để chuyển giao toàn bộ dữ liệu sang máy khác.
+# Sau khi chuyển giao xong, BỎ comment các dòng dưới để chặn lại hợp đồng/báo cáo
+# (tài liệu mật — repo dù private cũng không nên chứa lâu dài).
+# contracts/inbox/*
+# contracts/done/*
+# reports/*
+# !contracts/inbox/.gitkeep
+# !contracts/done/.gitkeep
+# !reports/.gitkeep
 
 # Python
 __pycache__/
