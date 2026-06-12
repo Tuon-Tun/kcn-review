@@ -42,16 +42,23 @@ SOURCES = {
     "ND-31-2021":  ("dau-tu",     "vbpl", "https://vbpl.moj.gov.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=147720"),
     "NQ-136-2024": ("da-nang",    "xdcs", "https://xaydungchinhsach.chinhphu.vn/nghi-quyet-136-2024-qh15-ve-to-chuc-chinh-quyen-do-thi-va-thi-diem-mot-so-co-che-chinh-sach-dac-thu-phat-trien-tp-da-nang-119240716154818818.htm"),
     "NQ-98-2023":  ("ho-chi-minh","xdcs", "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-quyet-thi-diem-co-che-chinh-sach-dac-thu-phat-trien-tp-hcm-119230707074903999.htm"),
+    # --- Đợt 3: hoàn thiện toàn văn nhóm ưu đãi + văn bản sửa đổi mới ---
+    "ND-103-2024": ("dat-dai",    "congbao", "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-103-2024-nd-cp-42499.htm"),
+    "ND-291-2025": ("dat-dai",    "congbao", "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-291-2025-nd-cp-46567.htm"),
+    "ND-239-2025": ("dau-tu",     "congbao", "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-239-2025-nd-cp-46128.htm"),
 }
 
-# CHỜ BỔ SUNG — chưa tìm được toàn văn dạng text trên nguồn chính thống
-# (xdcs chỉ có trang tóm tắt; vanban.chinhphu.vn là PDF scan; vbpl chỉ có bản gốc scan).
-# Hướng xử lý: tải .doc từ Công báo rồi convert thủ công, hoặc chờ vbpl cập nhật toàn văn.
-#   ND-239-2025 : Sửa đổi NĐ 31/2021 (hướng dẫn Luật Đầu tư) — QUAN TRỌNG khi tư vấn ưu đãi
-#   ND-182-2024 : Quỹ Hỗ trợ đầu tư (bán dẫn/AI/công nghệ cao)
-#   ND-103-2024 : Tiền sử dụng đất, tiền thuê đất (miễn giảm) — vanban docid 210797 (scan)
-#   QD-29-2021  : Ưu đãi đầu tư đặc biệt (miễn tiền thuê đất 18-22 năm)
-#   NQ-259-2025 : Sửa đổi NQ 136/2024 (Đà Nẵng — thêm ưu đãi Khu TMTD, TOD)
+# CHỜ BỔ SUNG (đã thử mọi nguồn chính thống truy cập được bằng script):
+#   QD-29-2021  : Ưu đãi đầu tư đặc biệt — vanban docid 204246 chỉ có PDF scan;
+#                 vbpl không có toàn văn HTML. Cách làm: tải .doc từ Công báo giấy
+#                 hoặc mở vbpl.vn bằng trình duyệt (bot bị chặn) rồi lưu text.
+#   ND-182-2024 : Quỹ Hỗ trợ đầu tư — vanban docid 212199 scan; trang xdcs nạp nội
+#                 dung bằng JS (script không thấy). Cách làm: mở trang xdcs bằng
+#                 trình duyệt -> copy toàn văn, hoặc kết nối Claude in Chrome.
+#   NQ-259-2025 : Sửa NQ 136 (Đà Nẵng) — PDF bản ký trên cdn.nhandan.vn là scan
+#                 không có lớp chữ. Cách làm: chờ vbpl/xdcs đăng toàn văn HTML.
+#   NQ-254-2025 : Gỡ vướng thi hành Luật Đất đai — trang xdcs "TOÀN VĂN" nạp JS.
+#                 Cách làm: như ND-182.
 
 DRAFT_COLS = ["doc_code", "nhom", "nguon_url", "ngay_tai", "so_dieu", "ghi_chu"]
 
@@ -109,7 +116,27 @@ def fetch_pdf(url):
     if r.content[:4] != b"%PDF":
         raise RuntimeError("noi dung tra ve khong phai PDF")
     reader = PdfReader(io.BytesIO(r.content))
-    return clean_text("\n".join(p.extract_text() or "" for p in reader.pages)), url
+    text = clean_text("\n".join(p.extract_text() or "" for p in reader.pages))
+    # một số số Công báo xuất PDF vỡ chữ ("S\nố") — pypdf bóc hỏng, thử pdfplumber
+    if text and not re.search(r"^\s*Điều \d+", text, re.M):
+        import pdfplumber
+        with pdfplumber.open(io.BytesIO(r.content)) as pdf:
+            text = clean_text("\n".join(p.extract_text() or "" for p in pdf.pages))
+    return text, url
+
+
+def fetch_congbao(page_url):
+    """Trang văn bản trên Công báo -> link tải g7.cdnchinhphu.vn (ưu tiên PDF sắp chữ)."""
+    r = requests.get(page_url, timeout=60, headers=HEADERS)
+    r.raise_for_status()
+    soup = BeautifulSoup(r.text, "html.parser")
+    links = [a["href"] for a in soup.find_all("a", href=True)
+             if "cdnchinhphu.vn" in a["href"]]
+    pdfs = [u for u in links if ".pdf" in u.lower()]
+    if not pdfs:
+        raise RuntimeError(f"khong thay link PDF tren {page_url}")
+    text, _ = fetch_pdf(pdfs[0])
+    return text, page_url
 
 
 def fetch_vanban(docid):
@@ -156,7 +183,8 @@ def main():
             continue
         print(f"--- {code} ({kind}) ...", flush=True)
         try:
-            fetcher = {"xdcs": fetch_xdcs, "vbpl": fetch_vbpl, "pdf": fetch_pdf, "vanban": fetch_vanban}[kind]
+            fetcher = {"xdcs": fetch_xdcs, "vbpl": fetch_vbpl, "pdf": fetch_pdf,
+                       "vanban": fetch_vanban, "congbao": fetch_congbao}[kind]
             text, src = fetcher(ref)
             so_dieu = len(re.findall(r"^\s*Điều \d+", text, re.M))
             note = ""
