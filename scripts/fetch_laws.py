@@ -49,9 +49,9 @@ SOURCES = {
 }
 
 # CHỜ BỔ SUNG (đã thử mọi nguồn chính thống truy cập được bằng script):
-#   QD-29-2021  : Ưu đãi đầu tư đặc biệt — vanban docid 204246 chỉ có PDF scan;
-#                 vbpl không có toàn văn HTML. Cách làm: tải .doc từ Công báo giấy
-#                 hoặc mở vbpl.vn bằng trình duyệt (bot bị chặn) rồi lưu text.
+#   QD-29-2021  : ĐÃ CÓ bản AI chép tay từ PDF scan người dùng cung cấp (2026-06-12)
+#                 -> laws_staging/dau-tu/QD-29-2021.txt — người dùng PHẢI soát lại
+#                 từng con số trước khi duyệt vào laws/.
 #   ND-182-2024 : Quỹ Hỗ trợ đầu tư — vanban docid 212199 scan; trang xdcs nạp nội
 #                 dung bằng JS (script không thấy). Cách làm: mở trang xdcs bằng
 #                 trình duyệt -> copy toàn văn, hoặc kết nối Claude in Chrome.
