@@ -48,8 +48,13 @@ Mọi phân tích đứng về góc nhìn: bảo vệ lợi ích KCN VÀ tuân t
 ## Quy ước thư mục
 - contracts/inbox/ : HĐ chờ review → xong chuyển contracts/done/
 - reports/         : báo cáo YYYY-MM-DD_<tên-HĐ>.docx + index.csv
-- laws/            : văn bản luật + metadata.csv — CHỈ người dùng thêm thủ công,
-                     agent KHÔNG BAO GIỜ tự thêm/sửa file trong laws/
+- laws/            : văn bản luật + metadata.csv, chia thư mục con theo cột `nhom`
+                     (kcn / dat-dai / dau-tu / moi-truong / lao-dong / dan-su).
+                     Agent KHÔNG BAO GIỜ tự thêm/sửa file trong laws/ — trừ khi
+                     thực hiện lệnh duyệt trực tiếp của người dùng (skill law-fetch).
+- laws_staging/    : khu CHỜ DUYỆT — skill law-fetch tải luật từ nguồn chính thống
+                     vào đây (kèm metadata_draft.csv + URL nguồn); người dùng duyệt
+                     xong mới được chuyển sang laws/
 - termbase/termbase.csv : thuật ngữ VI-EN (cột: vi,en_chuan,bien_the,ghi_chu,loai_hd)
 
 ## Khi review hợp đồng: LUÔN dùng skill legal-review. Không tự chế quy trình.

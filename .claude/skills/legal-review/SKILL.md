@@ -7,8 +7,19 @@ description: Quy trình review hợp đồng KCN 4 bước có kiểm chứng tr
 # Quy trình review hợp đồng KCN
 
 ## Bước 1 — TRIAGE (khoanh vùng)
-- Đọc lướt HĐ: loại HĐ, ngôn ngữ, NGÀY KÝ (hỏi người dùng nếu không rõ).
-- Lọc laws/metadata.csv lấy văn bản có hiệu lực tại ngày ký; chọn CHỈ những văn bản
+- Đọc lướt HĐ (chỉ trang đầu + mục lục/tiêu đề Điều): loại HĐ, ngôn ngữ, NGÀY KÝ
+  (hỏi người dùng nếu không rõ).
+- DETECT loại HĐ → ánh xạ sang nhóm luật (cột `nhom` trong laws/metadata.csv):
+  | Loại HĐ                  | Nhóm luật bắt buộc      | Nhóm thêm khi HĐ có nội dung liên quan |
+  |--------------------------|-------------------------|----------------------------------------|
+  | Thuê đất / thuê lại đất  | kcn, dat-dai            | dau-tu, moi-truong                     |
+  | Thuê nhà xưởng           | kcn, dan-su             | dat-dai, moi-truong                    |
+  | Dịch vụ hạ tầng/tiện ích | kcn, dan-su             | moi-truong                             |
+  | Gia công / dịch vụ SX    | dan-su                  | lao-dong, dau-tu                       |
+  CHỈ grep/đọc file trong các thư mục laws/<nhóm> đã chọn — file ngoài nhóm coi
+  như không tồn tại ở bước này (tiết kiệm token). Gặp dẫn chiếu chéo sang văn bản
+  ngoài nhóm ở B2 thì mới mở rộng, và ghi rõ lý do mở rộng.
+- Lọc tiếp theo metadata.csv lấy văn bản có hiệu lực tại ngày ký; chọn CHỈ những văn bản
   thực sự liên quan loại HĐ này (HĐ dịch vụ hạ tầng đơn giản không cần Luật Đất
   đai/Lao động). Ghi rõ: dùng gì, loại gì, vì sao.
 - Văn bản dùng cho ngày ký nhưng nay is_active=FALSE → ghi chú cờ "đã thay đổi".
@@ -29,7 +40,8 @@ Với từng điều khoản ưu tiên:
 
 ## Bước 3 — KIỂM CHỨNG MÁY (bắt buộc, không bỏ qua)
 - Xuất findings ra JSON tạm → chạy: python scripts/verify_citation.py
-- Script đối chiếu TỪNG quoted_law_text với nội dung thật trong laws/*.txt
+- Script đối chiếu TỪNG quoted_law_text với nội dung thật trong laws/**/*.txt
+  (quét đệ quy mọi thư mục nhóm)
   (chuẩn hoá khoảng trắng rồi khớp chuỗi). FAIL → loại finding, ghi vào
   "Đã loại do không xác minh được".
 - Script chưa tồn tại → viết nó trước (kèm self-test bắt được trích dẫn bịa),
