@@ -52,13 +52,13 @@ SOURCES = {
 #   QD-29-2021  : ĐÃ CÓ bản AI chép tay từ PDF scan người dùng cung cấp (2026-06-12)
 #                 -> laws_staging/dau-tu/QD-29-2021.txt — người dùng PHẢI soát lại
 #                 từng con số trước khi duyệt vào laws/.
-#   ND-182-2024 : Quỹ Hỗ trợ đầu tư — vanban docid 212199 scan; trang xdcs nạp nội
-#                 dung bằng JS (script không thấy). Cách làm: mở trang xdcs bằng
-#                 trình duyệt -> copy toàn văn, hoặc kết nối Claude in Chrome.
+#   ND-182-2024 : ĐÃ CÓ — convert từ .docx người dùng cung cấp (2026-06-12)
+#                 -> laws_staging/dau-tu/ND-182-2024.txt
 #   NQ-259-2025 : ĐÃ CÓ — bóc từ file .doc người dùng cung cấp bằng scripts/doc_extract.py
 #                 (2026-06-12) -> laws_staging/da-nang/NQ-259-2025.txt
-#   NQ-254-2025 : Gỡ vướng thi hành Luật Đất đai — trang xdcs "TOÀN VĂN" nạp JS.
-#                 Cách làm: như ND-182.
+#   NQ-254-2025 : ĐÃ CÓ — convert từ .docx người dùng cung cấp (2026-06-12)
+#                 -> laws_staging/dat-dai/NQ-254-2025.txt
+# => KHO ĐỦ 19/19 — không còn văn bản chờ.
 
 DRAFT_COLS = ["doc_code", "nhom", "nguon_url", "ngay_tai", "so_dieu", "ghi_chu"]
 
