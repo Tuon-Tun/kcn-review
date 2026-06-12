@@ -55,8 +55,8 @@ SOURCES = {
 #   ND-182-2024 : Quỹ Hỗ trợ đầu tư — vanban docid 212199 scan; trang xdcs nạp nội
 #                 dung bằng JS (script không thấy). Cách làm: mở trang xdcs bằng
 #                 trình duyệt -> copy toàn văn, hoặc kết nối Claude in Chrome.
-#   NQ-259-2025 : Sửa NQ 136 (Đà Nẵng) — PDF bản ký trên cdn.nhandan.vn là scan
-#                 không có lớp chữ. Cách làm: chờ vbpl/xdcs đăng toàn văn HTML.
+#   NQ-259-2025 : ĐÃ CÓ — bóc từ file .doc người dùng cung cấp bằng scripts/doc_extract.py
+#                 (2026-06-12) -> laws_staging/da-nang/NQ-259-2025.txt
 #   NQ-254-2025 : Gỡ vướng thi hành Luật Đất đai — trang xdcs "TOÀN VĂN" nạp JS.
 #                 Cách làm: như ND-182.
 
