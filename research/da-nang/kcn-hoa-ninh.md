@@ -19,6 +19,14 @@
 | Thời hạn hoạt động | 50 năm kể từ ngày được Nhà nước cho thuê đất |
 | Cơ quan quản lý | Ban Quản lý Khu công nghệ cao và các KCN Đà Nẵng (DSEZA) |
 
+## Cập nhật hành chính & Khu TMTD (bổ sung 2026-06-12)
+- Từ 01/07/2025: Đà Nẵng hợp nhất với Quảng Nam, bỏ cấp huyện — địa danh "huyện
+  Hòa Vang" trong hồ sơ cũ cần đọc theo đơn vị hành chính mới (cấp xã trực thuộc TP).
+- **QĐ 1142/QĐ-TTg ngày 13/06/2025**: thành lập Khu thương mại tự do Đà Nẵng,
+  quy mô ~1.881 ha tại 7 vị trí không liền kề (sản xuất, logistics, thương mại -
+  dịch vụ, công nghiệp công nghệ số/CNTT/ĐMST). CẦN đối chiếu 7 vị trí này với
+  KCN Hòa Ninh để xác định quan hệ địa lý khi viết tài liệu chào đầu tư.
+
 ## Khung pháp lý áp dụng riêng cho Đà Nẵng
 - **NQ 136/2024/QH15** (hiệu lực 01/01/2025): chính quyền đô thị + 30 cơ chế đặc thù,
   trong đó có Khu thương mại tự do Đà Nẵng, danh mục ngành ưu tiên thu hút nhà đầu
