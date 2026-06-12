@@ -1,0 +1,38 @@
+[
+ {
+  "id": "F1", "muc_do": "DO",
+  "dieu_khoan_hd": "Điều 3.1: Bên B tự xây dựng hệ thống xử lý nước thải riêng và được xả nước thải đã xử lý trực tiếp ra môi trường tiếp nhận ngoài khu công nghiệp, không phải đấu nối vào hệ thống xử lý nước thải tập trung của KCN.",
+  "van_de": "Cho phép xả thẳng không đấu nối nhưng KHÔNG kèm các điều kiện miễn trừ bắt buộc theo luật (quan trắc tự động liên tục, phương án ứng phó sự cố). KCN gánh trách nhiệm quản lý nhà nước nếu Bên B vi phạm.",
+  "quoted_law_text": "b) Các trường hợp đã được miễn trừ đấu nối vào hệ thống thu gom, thoát nước và xử lý nước thải tập trung phải bảo đảm nước thải sau xử lý đáp ứng yêu cầu về bảo vệ môi trường trước khi xả ra môi trường; có phương án phòng ngừa, ứng phó sự cố môi trường đối với nước thải và có hệ thống quan trắc nước thải tự động, liên tục theo quy định của pháp luật.",
+  "source_file": "moi-truong/BVMT-2020.txt",
+  "dieu_khoan_luat": "Luật BVMT 2020 (mục khu sản xuất, kinh doanh, dịch vụ tập trung)",
+  "de_xuat": "Sửa Điều 3.1: chỉ miễn đấu nối khi có văn bản miễn trừ của cơ quan thẩm quyền VÀ Bên B lắp quan trắc tự động liên tục + phương án ứng phó sự cố; bổ sung quyền Bên A kiểm tra và chế tài đình chỉ xả thải."
+ },
+ {
+  "id": "F2", "muc_do": "VANG",
+  "dieu_khoan_hd": "Điều 4.1: Bên B được quyền chuyển nhượng quyền thuê lại đất hoặc cho bên thứ ba thuê lại... không cần sự chấp thuận bằng văn bản của Bên A, chỉ cần thông báo trước 30 ngày.",
+  "van_de": "Luật chỉ trao quyền cho thuê lại khi thuê đất trả tiền một lần — Bên B trả một lần nên CÓ quyền theo luật; vì vậy muốn kiểm soát chuỗi khách thuê (ngành nghề, môi trường, an ninh), Bên A bắt buộc phải kiểm soát bằng hợp đồng. Điều khoản hiện tại từ bỏ hoàn toàn quyền kiểm soát đó.",
+  "quoted_law_text": "c) Cho thuê quyền sử dụng đất, tài sản thuộc sở hữu của mình gắn liền với đất đối với trường hợp được Nhà nước giao đất có thu tiền sử dụng đất; cho thuê lại quyền sử dụng đất, tài sản thuộc sở hữu của mình gắn liền với đất đối với trường hợp được Nhà nước cho thuê đất thu tiền thuê đất một lần cho cả thời gian thuê;",
+  "source_file": "dat-dai/LDD-2024.txt",
+  "dieu_khoan_luat": "Luật Đất đai 2024 (quyền của người sử dụng đất thuê trả tiền một lần)",
+  "de_xuat": "Sửa Điều 4.1: chuyển nhượng/cho thuê lại phải được Bên A chấp thuận bằng văn bản (không từ chối bất hợp lý), bên nhận phải kế thừa toàn bộ nghĩa vụ môi trường-hạ tầng và thuộc ngành nghề phù hợp quy hoạch KCN."
+ },
+ {
+  "id": "F3", "muc_do": "DO",
+  "dieu_khoan_hd": "Điều 6.1: tranh chấp giải quyết chung thẩm bằng trọng tài SIAC, luật áp dụng là luật Singapore, bản tiếng Anh ưu tiên.",
+  "van_de": "Đối tượng hợp đồng là quyền sử dụng đất tại Việt Nam — pháp luật áp dụng bắt buộc là pháp luật Việt Nam, không thể chọn luật Singapore. Điều khoản chọn luật nước ngoài có nguy cơ vô hiệu và phán quyết khó được công nhận thi hành tại VN.",
+  "quoted_law_text": "4. Trường hợp hợp đồng có đối tượng là bất động sản thì pháp luật áp dụng đối với việc chuyển giao quyền sở hữu, quyền khác đối với tài sản là bất động sản, thuê bất động sản hoặc việc sử dụng bất động sản để bảo đảm thực hiện nghĩa vụ là pháp luật của nước nơi có bất động sản.",
+  "source_file": "dan-su/BLDS-2015.txt",
+  "dieu_khoan_luat": "Điều 683 khoản 4 Bộ luật Dân sự 2015",
+  "de_xuat": "Sửa Điều 6.1: luật áp dụng là pháp luật Việt Nam; trọng tài VIAC (hoặc tòa án VN); bản tiếng Việt có giá trị ưu tiên khi mâu thuẫn."
+ },
+ {
+  "id": "F4-DEMO-BIA", "muc_do": "DO",
+  "dieu_khoan_hd": "Điều 5.1: cam kết tuân thủ PCCC (chung chung).",
+  "van_de": "[FINDING NÀY CỐ Ý BỊA TRÍCH DẪN để kiểm tra Bước 3]",
+  "quoted_law_text": "Điều 99. Chủ đầu tư khu công nghiệp phải mua bảo hiểm cháy nổ cho toàn bộ nhà xưởng của bên thuê.",
+  "source_file": "moi-truong/LPCCC-2024.txt",
+  "dieu_khoan_luat": "Điều 99 Luật PCCC 2024 (KHÔNG TỒN TẠI — luật chỉ có 55 Điều)",
+  "de_xuat": "(phải bị loại ở B3)"
+ }
+]

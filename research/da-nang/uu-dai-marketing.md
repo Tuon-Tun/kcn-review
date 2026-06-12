@@ -37,6 +37,21 @@ Căn cứ: NQ 136/2024/QH15 (laws_staging/da-nang/NQ-136-2024.txt), sửa đổi
   dẫn/điện tử đặt nhà máy ở Hòa Ninh, R&D ở Khu CNC, logistics ở Khu TMTD + cảng
   Liên Chiểu.
 
+## ⚠️ ĐIỀU CHỈNH QUAN TRỌNG — Thuế tối thiểu toàn cầu (bổ sung 2026-06-12)
+Theo NQ 107/2023/QH15 + NĐ 236/2025 (laws/dau-tu/): tập đoàn đa quốc gia có doanh
+thu hợp nhất ≥ 750 triệu EUR bị áp **thuế TNDN bổ sung tối thiểu nội địa (QDMTT)
+15%** từ năm tài chính 2024. Hệ quả cho pitch:
+- Với "đại bàng" FDI (đối tượng chính của bán dẫn/điện tử): các ưu đãi **thuế suất
+  5–10%** ở Tầng 1–2 bị TRUNG HÒA — doanh nghiệp vẫn phải nộp bù lên 15%.
+  KHÔNG dùng thuế suất thấp làm thông điệp chính với nhóm này.
+- Thông điệp thay thế: **hỗ trợ chi phí bằng tiền qua Quỹ Hỗ trợ đầu tư (NĐ 182/2024)**
+  — đào tạo, R&D, tài sản cố định... — đây là công cụ "hậu thuế tối thiểu" hợp chuẩn
+  OECD, cộng với miễn giảm TIỀN THUÊ ĐẤT (QĐ 29/2021 — không phải thuế TNDN nên
+  không bị QDMTT trung hòa) và ưu đãi phi tài chính (Khu TMTD, visa chuyên gia,
+  giảm thuế TNCN nhân lực theo NQ 136/259).
+- Với doanh nghiệp DƯỚI ngưỡng 750 triệu EUR: ưu đãi thuế suất vẫn nguyên giá trị —
+  pitch thuế giữ nguyên cho nhóm SME/midcap.
+
 ## Tầng 3 — Khung "pitch" gợi ý (3 thông điệp)
 1. **"Ưu đãi quốc gia tốt nhất + cơ chế đặc thù duy nhất miền Trung"**: cộng gộp
    tầng 1 + tầng 2 mà KCN tỉnh khác không có (trừ TP.HCM với NQ 98 — xem hồ sơ

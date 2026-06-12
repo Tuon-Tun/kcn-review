@@ -1,10 +1,37 @@
 doc_code,ten_van_ban,cap_hieu_luc,effective_date,expiry_date,thay_the_cho,is_active,nhom
-LBH-2025,Luat Ban hanh VBQPPL 2025 (64/2025/QH15),3,2025-04-01,,LBH-2015,TRUE,dan-su
-LDT-2020,Luat Dau tu 2020 (61/2020/QH14),3,2021-01-01,,LDT-2014,TRUE,dau-tu
 LDD-2024,Luat Dat dai 2024 (31/2024/QH15),3,2024-08-01,,LDD-2013,TRUE,dat-dai
-BLDS-2015,Bo luat Dan su 2015,3,2017-01-01,,,TRUE,dan-su
-BVMT-2020,Luat Bao ve Moi truong 2020,3,2022-01-01,,,TRUE,moi-truong
-BLLD-2019,Bo luat Lao dong 2019,3,2021-01-01,,,TRUE,lao-dong
-ND-35-2022,Nghi dinh 35/2022/ND-CP quan ly KCN KKT,5,2022-07-15,,ND-82-2018,TRUE,kcn
+LKDBDS-2023,Luat Kinh doanh bat dong san 2023 (29/2023/QH15),3,2024-08-01,,LKDBDS-2014,TRUE,dat-dai
 ND-102-2024,Nghi dinh 102/2024/ND-CP huong dan Luat Dat dai,5,2024-08-01,,,TRUE,dat-dai
+ND-103-2024,Nghi dinh 103/2024/ND-CP tien su dung dat tien thue dat,5,2024-08-01,,,TRUE,dat-dai
+ND-291-2025,Nghi dinh 291/2025/ND-CP sua ND 103/2024 va ND 104/2024,5,2025-11-06,,,TRUE,dat-dai
+ND-151-2025,Nghi dinh 151/2025/ND-CP phan quyen dat dai chinh quyen 2 cap,5,2025-07-01,2027-02-28,,TRUE,dat-dai
+ND-226-2025,Nghi dinh 226/2025/ND-CP sua cac ND thi hanh Luat Dat dai,5,2025-08-15,,,TRUE,dat-dai
+NQ-254-2025,Nghi quyet 254/2025/QH15 go vuong thi hanh Luat Dat dai,3,2025-12-11,,,TRUE,dat-dai
+LDT-2020,Luat Dau tu 2020 (61/2020/QH14),3,2021-01-01,2026-03-01,LDT-2014,FALSE,dau-tu
+LDT-2025,Luat Dau tu 2025 (143/2025/QH15),3,2026-03-01,,LDT-2020,TRUE,dau-tu
+LTTNDN-2025,Luat Thue thu nhap doanh nghiep 2025 (67/2025/QH15),3,2025-10-01,,LTTNDN-2008,TRUE,dau-tu
+ND-31-2021,Nghi dinh 31/2021/ND-CP huong dan Luat Dau tu,5,2021-03-26,,,TRUE,dau-tu
+ND-239-2025,Nghi dinh 239/2025/ND-CP sua ND 31/2021,5,2025-09-03,,,TRUE,dau-tu
+ND-182-2024,Nghi dinh 182/2024/ND-CP Quy Ho tro dau tu,5,2024-12-31,,,TRUE,dau-tu
+QD-29-2021,Quyet dinh 29/2021/QD-TTg uu dai dau tu dac biet,6,2021-10-06,,,TRUE,dau-tu
+NQ-107-2023,Nghi quyet 107/2023/QH15 thue toi thieu toan cau,3,2024-01-01,,,TRUE,dau-tu
+ND-236-2025,Nghi dinh 236/2025/ND-CP huong dan NQ 107/2023,5,2025-10-15,,,TRUE,dau-tu
+ND-35-2022,Nghi dinh 35/2022/ND-CP quan ly KCN KKT,5,2022-07-15,,ND-82-2018,TRUE,kcn
 ND-82-2018,Nghi dinh 82/2018/ND-CP (cu - tham chieu HD cu),5,2018-07-10,2022-07-15,,FALSE,kcn
+BVMT-2020,Luat Bao ve Moi truong 2020 (72/2020/QH14),3,2022-01-01,,,TRUE,moi-truong
+L146-2025,Luat 146/2025/QH15 sua 15 luat nong nghiep moi truong,3,2026-01-01,,,TRUE,moi-truong
+ND-08-2022,Nghi dinh 08/2022/ND-CP chi tiet Luat BVMT,5,2022-01-10,,,TRUE,moi-truong
+ND-08-2022-PL,Phu luc Nghi dinh 08/2022/ND-CP,5,2022-01-10,,,TRUE,moi-truong
+ND-05-2025,Nghi dinh 05/2025/ND-CP sua ND 08/2022,5,2025-01-06,,,TRUE,moi-truong
+ND-48-2026,Nghi dinh 48/2026/ND-CP sua ND 08/2022 (lan 2),5,2026-01-29,,,TRUE,moi-truong
+LPCCC-2024,Luat PCCC va CNCH 2024 (55/2024/QH15),3,2025-07-01,,LPCCC-2001,TRUE,moi-truong
+ND-105-2025,Nghi dinh 105/2025/ND-CP huong dan Luat PCCC,5,2025-07-01,,,TRUE,moi-truong
+BLLD-2019,Bo luat Lao dong 2019 (45/2019/QH14),3,2021-01-01,,,TRUE,lao-dong
+BLDS-2015,Bo luat Dan su 2015 (91/2015/QH13),3,2017-01-01,,,TRUE,dan-su
+LTTTM-2010,Luat Trong tai thuong mai 2010 (54/2010/QH12),3,2011-01-01,,,TRUE,dan-su
+LBH-2025,Luat Ban hanh VBQPPL 2025 (64/2025/QH15),3,2025-04-01,,LBH-2015,TRUE,dan-su
+L87-2025,Luat 87/2025/QH15 sua Luat Ban hanh VBQPPL,3,2025-07-01,,,TRUE,dan-su
+NQ-136-2024,Nghi quyet 136/2024/QH15 co che dac thu Da Nang,3,2025-01-01,,,TRUE,da-nang
+NQ-259-2025,Nghi quyet 259/2025/QH15 sua NQ 136/2024,3,2025-12-12,,,TRUE,da-nang
+QD-1142-2025,Quyet dinh 1142/QD-TTg thanh lap Khu TMTD Da Nang,6,2025-06-13,,,TRUE,da-nang
+NQ-98-2023,Nghi quyet 98/2023/QH15 co che dac thu TPHCM,3,2023-08-01,,NQ-54-2017,TRUE,ho-chi-minh
