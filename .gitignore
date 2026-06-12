@@ -1,0 +1,25 @@
+# DỮ LIỆU MẬT — không bao giờ đẩy lên GitHub
+# Hợp đồng là tài liệu bảo mật của KCN và khách hàng
+contracts/inbox/*
+contracts/done/*
+# Báo cáo review chứa nội dung hợp đồng
+reports/*
+# Văn bản luật: file lớn, người dùng tự nạp thủ công từng máy
+laws/*.pdf
+laws/*.txt
+laws/*.docx
+
+# Giữ lại cấu trúc thư mục và file cấu hình
+!contracts/inbox/.gitkeep
+!contracts/done/.gitkeep
+!reports/.gitkeep
+!laws/metadata.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Tạm
+*.tmp
+~$*

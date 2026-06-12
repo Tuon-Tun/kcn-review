@@ -1,0 +1,10 @@
+doc_code,ten_van_ban,cap_hieu_luc,effective_date,expiry_date,thay_the_cho,is_active
+LBH-2025,Luat Ban hanh VBQPPL 2025 (64/2025/QH15),3,2025-04-01,,LBH-2015,TRUE
+LDT-2020,Luat Dau tu 2020 (61/2020/QH14),3,2021-01-01,,LDT-2014,TRUE
+LDD-2024,Luat Dat dai 2024 (31/2024/QH15),3,2024-08-01,,LDD-2013,TRUE
+BLDS-2015,Bo luat Dan su 2015,3,2017-01-01,,,TRUE
+BVMT-2020,Luat Bao ve Moi truong 2020,3,2022-01-01,,,TRUE
+BLLD-2019,Bo luat Lao dong 2019,3,2021-01-01,,,TRUE
+ND-35-2022,Nghi dinh 35/2022/ND-CP quan ly KCN KKT,5,2022-07-15,,ND-82-2018,TRUE
+ND-102-2024,Nghi dinh 102/2024/ND-CP huong dan Luat Dat dai,5,2024-08-01,,,TRUE
+ND-82-2018,Nghi dinh 82/2018/ND-CP (cu - tham chieu HD cu),5,2018-07-10,2022-07-15,,FALSE
