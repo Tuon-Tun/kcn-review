@@ -12,7 +12,8 @@ New-Item -ItemType Directory -Force $tmp | Out-Null
 # 1. Xác định commit gốc trên remote và các file local khác biệt so với nó
 $base = & $gh api "$repo/branches/master" --jq .commit.sha
 $baseTree = & $gh api "$repo/git/commits/$base" --jq .tree.sha
-$files = @(git -C $root diff --name-only $base HEAD) | Where-Object { $_ }
+# --no-renames: ép rename thành xóa+thêm để đường dẫn CŨ cũng được xử lý (xóa trên remote)
+$files = @(git -C $root diff --name-only --no-renames $base HEAD) | Where-Object { $_ }
 if (-not $files) { Write-Output "Khong co gi de push."; exit 0 }
 Write-Output "Base: $base | files: $($files.Count)"
 
