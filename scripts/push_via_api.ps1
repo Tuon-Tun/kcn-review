@@ -18,8 +18,16 @@ Write-Output "Base: $base | files: $($files.Count)"
 
 # 2. Tạo blob cho từng file — lấy bytes từ HEAD (đã qua chuẩn hóa autocrlf của git),
 #    KHÔNG đọc thẳng từ đĩa (file đĩa có thể là CRLF -> lệch với quy ước LF của repo)
+#    File bị XÓA/DI CHUYỂN trong HEAD -> entry sha=null để GitHub xóa khỏi tree
+#    (thiếu bước này thì file xóa local vẫn sống mãi trên remote!)
 $entries = @()
 foreach ($f in $files) {
+    cmd /c "git -C `"$root`" cat-file -e `"HEAD:$f`" 2>nul"
+    if ($LASTEXITCODE -ne 0) {
+        $entries += @{ path = $f; mode = "100644"; type = "blob"; sha = $null }
+        Write-Output "  xoa  $f"
+        continue
+    }
     $tmpBlob = Join-Path $tmp "raw.bin"
     cmd /c "git -C `"$root`" cat-file blob `"HEAD:$f`" > `"$tmpBlob`""
     $b64 = [Convert]::ToBase64String([IO.File]::ReadAllBytes($tmpBlob))

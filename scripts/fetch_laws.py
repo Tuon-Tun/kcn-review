@@ -175,6 +175,11 @@ def main():
     for code, (nhom, kind, ref) in SOURCES.items():
         out = STAGING / nhom / f"{code}.txt"
         out.parent.mkdir(parents=True, exist_ok=True)
+        # đã duyệt vào laws/ thì không tải lại (staging rỗng sau duyệt!)
+        approved = ROOT / "laws" / nhom / f"{code}.txt"
+        if approved.exists() and approved.stat().st_size > 5000:
+            print(f"--- {code}: da duyet trong laws/{nhom}/, bo qua", flush=True)
+            continue
         if out.exists() and out.stat().st_size > 5000:
             text = out.read_text(encoding="utf-8")
             so_dieu = len(re.findall(r"^\s*Điều \d+", text, re.M))

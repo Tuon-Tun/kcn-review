@@ -40,4 +40,8 @@ description: Tự tìm, tải văn bản luật từ nguồn chính thống, con
 - Chuyển file từ laws_staging/<nhóm>/ sang laws/<nhóm>/ (đây là lệnh trực tiếp
   của người dùng nên được phép ghi vào laws/).
 - Gộp dòng tương ứng từ metadata_draft.csv vào laws/metadata.csv (bỏ 2 cột phụ).
-- Xoá file đã duyệt khỏi staging.
+- LƯU HỒ SƠ NGUỒN GỐC: gộp các dòng đã duyệt (kèm nguon_url) vào
+  laws/NGUON-GOC-VAN-BAN.csv rồi xóa khỏi metadata_draft.csv.
+- Xoá file đã duyệt khỏi staging; KIỂM TRA LẠI staging phải sạch (không còn .txt
+  của văn bản đã duyệt) — nếu dùng push_via_api.ps1 thì xác nhận cả trên remote.
+- Cập nhật laws/SO-DO-VAN-BAN.md (thống kê + sơ đồ quan hệ) cho văn bản mới.

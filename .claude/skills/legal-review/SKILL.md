@@ -25,6 +25,10 @@ description: Quy trình review hợp đồng KCN 4 bước có kiểm chứng tr
   thực sự liên quan loại HĐ này (HĐ dịch vụ hạ tầng đơn giản không cần Luật Đất
   đai/Lao động). Ghi rõ: dùng gì, loại gì, vì sao.
 - Văn bản dùng cho ngày ký nhưng nay is_active=FALSE → ghi chú cờ "đã thay đổi".
+- HĐ ký TRƯỚC 01/07/2025 (sắp xếp hành chính: sáp nhập tỉnh, bỏ cấp huyện) →
+  BẮT BUỘC kiểm tra điều khoản địa danh + thẩm quyền cơ quan nhà nước được dẫn
+  trong HĐ (vd "UBND huyện X" không còn tồn tại — thẩm quyền đất đai đã chuyển
+  theo NĐ 151/2025); HĐ ký SAU mốc này mà vẫn ghi địa danh/cơ quan cũ → finding.
 - Liệt kê điều khoản: ưu tiên (rủi ro tiềm ẩn theo CLAUDE.md) / bỏ qua (định nghĩa,
   thủ tục thuần).
 
@@ -50,7 +54,8 @@ Với từng điều khoản ưu tiên:
   rồi mới tiếp tục.
 
 ## Bước 4 — BÁO CÁO
-Tạo reports/YYYY-MM-DD_<tên-HĐ>.docx (python-docx, font Arial), gồm:
+Tạo reports/YYYY-MM-DD_<tên-HĐ>.docx (python-docx, font Arial); nếu file đã tồn
+tại (review lại trong ngày) thì thêm hậu tố _HHMM để không ghi đè. Gồm:
 1. Tóm tắt: loại HĐ, ngày ký, điểm rủi ro tổng, số finding đỏ/vàng/xanh.
 2. Phạm vi triage: luật đã dùng / đã loại / cờ hiệu lực — minh bạch phạm vi đọc.
 3. Chi tiết finding: điều khoản → vấn đề → căn cứ nguyên văn (+ chuỗi dẫn chiếu

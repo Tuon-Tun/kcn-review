@@ -73,6 +73,7 @@ def run_claude(prompt, action, filename):
             return
         job["log"] = f"[{datetime.now():%H:%M:%S}] Bắt đầu {action} — {filename}\nĐang gọi Claude Code, việc này có thể mất vài phút...\n"
     cmd = [claude, "-p", prompt,
+           "--verbose",  # in tiến trình từng bước — không có thì ô log đứng im đến khi xong
            "--permission-mode", "acceptEdits",
            "--allowedTools", ALLOWED_TOOLS]
     try:
