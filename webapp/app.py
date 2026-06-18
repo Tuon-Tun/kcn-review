@@ -184,7 +184,7 @@ PAGE = """<!doctype html>
  .running{background:#fff3df;color:#8a5a00}
  .note{font-size:12px;color:#5b6b78;margin-top:10px}
 </style></head><body>
-<header><h1>⚖️ KCN Review</h1><p>Review · Dịch · Đối chiếu hợp đồng — Ban Quản lý Khu Công Nghiệp</p></header>
+<header><h1>⚖️ KCN Review</h1><p>Review · Dịch · Đối chiếu hợp đồng — Phòng Pháp chế, Thanh Bình Phú Mỹ</p></header>
 <main>
  <div class="card"><h2>1️⃣ Đưa hợp đồng vào</h2>
   <div class="row"><input type="file" id="file" accept=".pdf,.docx,.doc,.txt">

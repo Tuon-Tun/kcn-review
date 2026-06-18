@@ -1,9 +1,16 @@
 # Dự án: Review hợp đồng Khu Công Nghiệp
 
 ## Bối cảnh
-Người dùng là chuyên gia pháp chế của BAN QUẢN LÝ KHU CÔNG NGHIỆP, review hợp đồng
-giữa KCN và khách hàng (thuê đất, thuê nhà xưởng, dịch vụ hạ tầng, gia công...).
-Mọi phân tích đứng về góc nhìn: bảo vệ lợi ích KCN VÀ tuân thủ quản lý nhà nước.
+Người dùng là TRƯỞNG PHÒNG PHÁP CHẾ của Công ty CP Thanh Bình Phú Mỹ — CHỦ ĐẦU TƯ
+HẠ TẦNG khu công nghiệp (KCN Hòa Ninh - Đà Nẵng; KCN chuyên sâu Phú Mỹ 3 - Bà Rịa
+Vũng Tàu). Công ty là BÊN CHO THUÊ / cung cấp dịch vụ hạ tầng, review hợp đồng ký
+với KHÁCH HÀNG thuê (thuê đất, thuê lại đất gắn hạ tầng, thuê nhà xưởng, dịch vụ
+hạ tầng/tiện ích, gia công...).
+Mọi phân tích đứng về góc nhìn: BẢO VỆ LỢI ÍCH CỦA THANH BÌNH PHÚ MỸ với tư cách
+bên cho thuê / chủ đầu tư hạ tầng, ĐỒNG THỜI bảo đảm công ty TUÂN THỦ pháp luật và
+GIỚI HẠN rủi ro trách nhiệm (môi trường/PCCC/hạ tầng dùng chung) mà công ty có thể
+bị quy kết/liên đới nếu khách hàng vi phạm. Lưu ý: công ty là đối tượng CHỊU sự quản
+lý nhà nước của Ban Quản lý KCN (DSEZA...), không phải cơ quan quản lý.
 
 ## Quy tắc TUYỆT ĐỐI về độ chính xác (không bao giờ vi phạm)
 1. Mọi nhận định pháp lý CHỈ dựa trên nội dung file trong laws/. KHÔNG dùng kiến
@@ -36,13 +43,14 @@ Mọi phân tích đứng về góc nhìn: bảo vệ lợi ích KCN VÀ tuân t
 - Tìm theo từ khoá / số Điều (grep) trước → CHỈ đọc các Điều liên quan.
 - Tác vụ phụ (convert, phân loại đơn giản) có thể chuyển model nhẹ hơn (lệnh /model).
 
-## Trọng tâm rủi ro (góc nhìn Ban Quản lý)
+## Trọng tâm rủi ro (góc nhìn chủ đầu tư hạ tầng / bên cho thuê — Thanh Bình Phú Mỹ)
 - Nghĩa vụ tài chính khách hàng: lãi chậm trả, quyền điều chỉnh giá của KCN (CPI/khung giá)
 - ĐỒNG TIỀN THANH TOÁN: giá thuê/phí ghi bằng ngoại tệ (USD) — đối chiếu pháp luật
   ngoại hối (nhóm ngoai-hoi: TT 32/2013 hạn chế niêm yết giá ngoại tệ trên lãnh thổ VN)
 - Môi trường/PCCC: đấu nối nước thải về trạm tập trung, quan trắc, giấy phép môi trường,
-  giấy phép tài nguyên nước; PCCC theo Luật 55/2024 + NĐ 105/2025 (KCN gánh trách nhiệm
-  quản lý nhà nước nếu khách hàng vi phạm)
+  giấy phép tài nguyên nước; PCCC theo Luật 55/2024 + NĐ 105/2025 (chủ đầu tư hạ tầng
+  CÓ THỂ BỊ LIÊN ĐỚI trách nhiệm nếu khách hàng vi phạm qua hệ thống dùng chung —
+  HĐ phải ràng buộc nghĩa vụ khách hàng + quyền kiểm tra/chế tài của công ty)
 - Chấm dứt & thu hồi đất: điều kiện/thủ tục có bảo vệ KCN; xử lý tài sản trên đất;
   nếu HĐ đụng chuyển mục đích đất rừng → nhóm lam-nghiep
 - KCN cam kết hạ tầng quá mức (công suất điện/nước/XLNT, giới hạn trách nhiệm khi sự cố) —
