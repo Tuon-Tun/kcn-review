@@ -12,12 +12,21 @@ description: Quy trình review hợp đồng KCN 4 bước có kiểm chứng tr
 - DETECT loại HĐ → ánh xạ sang nhóm luật (cột `nhom` trong laws/metadata.csv):
   | Loại HĐ                  | Nhóm luật bắt buộc      | Nhóm thêm khi HĐ có nội dung liên quan |
   |--------------------------|-------------------------|----------------------------------------|
-  | Thuê đất / thuê lại đất  | kcn, dat-dai            | dau-tu, moi-truong                     |
-  | Thuê nhà xưởng           | kcn, dan-su             | dat-dai, moi-truong                    |
-  | Dịch vụ hạ tầng/tiện ích | kcn, dan-su             | moi-truong                             |
-  | Gia công / dịch vụ SX    | dan-su                  | lao-dong, dau-tu                       |
+  | Thuê đất / thuê lại đất  | kcn, dat-dai            | dau-tu, moi-truong, xay-dung, quy-hoach|
+  | Thuê nhà xưởng           | kcn, dan-su             | dat-dai, moi-truong, xay-dung          |
+  | Dịch vụ hạ tầng/tiện ích | kcn, dan-su             | moi-truong, dien-luc                   |
+  | Gia công / dịch vụ SX    | dan-su                  | lao-dong, dau-tu, hai-quan             |
+  | Đấu thầu chọn nhà đầu tư | kcn, dau-thau           | dat-dai, dau-tu                        |
   CHỈ grep/đọc file trong các thư mục laws/<nhóm> đã chọn — file ngoài nhóm coi
   như không tồn tại ở bước này (tiết kiệm token).
+  + Quy tắc CẮT NGANG (thêm nhóm theo NỘI DUNG điều khoản, bất kể loại HĐ):
+    - giá/phí ghi bằng ngoại tệ (USD, EUR...) → + ngoai-hoi
+    - bên thuê là doanh nghiệp chế xuất (EPE) / có xuất nhập khẩu → + hai-quan
+    - có điều khoản thuế (GTGT, TNDN) → + thue, dau-tu
+    - có xây dựng/nghiệm thu công trình trên đất → + xay-dung
+    - chuyển mục đích đất rừng → + lam-nghiep
+    - tư cách pháp nhân/người ký → + doanh-nghiep
+    - điều khoản trọng tài/luật áp dụng → + dan-su (BLDS Đ.683, Luật Trọng tài TM)
   + Nhóm ĐỊA PHƯƠNG: HĐ thuộc địa bàn có cơ chế đặc thù (da-nang, ho-chi-minh...)
   → thêm nhóm địa phương đó vào phạm vi (NQ đặc thù có thể cho ưu đãi khác luật chung). Gặp dẫn chiếu chéo sang văn bản
   ngoài nhóm ở B2 thì mới mở rộng, và ghi rõ lý do mở rộng.

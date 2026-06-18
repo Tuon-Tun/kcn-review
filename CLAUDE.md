@@ -38,18 +38,29 @@ Mọi phân tích đứng về góc nhìn: bảo vệ lợi ích KCN VÀ tuân t
 
 ## Trọng tâm rủi ro (góc nhìn Ban Quản lý)
 - Nghĩa vụ tài chính khách hàng: lãi chậm trả, quyền điều chỉnh giá của KCN (CPI/khung giá)
-- Môi trường/PCCC: đấu nối nước thải về trạm tập trung, quan trắc, giấy phép môi trường
-  (KCN gánh trách nhiệm quản lý nhà nước nếu khách hàng vi phạm)
-- Chấm dứt & thu hồi đất: điều kiện/thủ tục có bảo vệ KCN; xử lý tài sản trên đất
-- KCN cam kết hạ tầng quá mức (công suất điện/nước/XLNT, giới hạn trách nhiệm khi sự cố)
-- Chuyển nhượng HĐ / cho thuê lại không cần KCN đồng ý
-- Giải quyết tranh chấp: VIAC/tòa án, luật áp dụng = luật VN, bản ngôn ngữ có hiệu lực
+- ĐỒNG TIỀN THANH TOÁN: giá thuê/phí ghi bằng ngoại tệ (USD) — đối chiếu pháp luật
+  ngoại hối (nhóm ngoai-hoi: TT 32/2013 hạn chế niêm yết giá ngoại tệ trên lãnh thổ VN)
+- Môi trường/PCCC: đấu nối nước thải về trạm tập trung, quan trắc, giấy phép môi trường,
+  giấy phép tài nguyên nước; PCCC theo Luật 55/2024 + NĐ 105/2025 (KCN gánh trách nhiệm
+  quản lý nhà nước nếu khách hàng vi phạm)
+- Chấm dứt & thu hồi đất: điều kiện/thủ tục có bảo vệ KCN; xử lý tài sản trên đất;
+  nếu HĐ đụng chuyển mục đích đất rừng → nhóm lam-nghiep
+- KCN cam kết hạ tầng quá mức (công suất điện/nước/XLNT, giới hạn trách nhiệm khi sự cố) —
+  điện theo Luật Điện lực 2024
+- Xây dựng trên đất thuê: giấy phép XD, chất lượng/nghiệm thu công trình (nhóm xay-dung)
+- Tư cách giao kết của bên thuê: năng lực pháp nhân (Luật Doanh nghiệp); doanh nghiệp
+  chế xuất (EPE) → ưu đãi/thủ tục hải quan, thuế XNK (nhóm hai-quan)
+- Chuyển nhượng HĐ / cho thuê lại không cần KCN đồng ý (Luật Đất đai, Luật KD BĐS)
+- Giải quyết tranh chấp: VIAC/tòa án, luật áp dụng = luật VN (BLDS Đ.683), bản ngôn ngữ có hiệu lực
 
 ## Quy ước thư mục
 - contracts/inbox/ : HĐ chờ review → xong chuyển contracts/done/
 - reports/         : báo cáo YYYY-MM-DD_<tên-HĐ>.docx + index.csv
-- laws/            : văn bản luật + metadata.csv, chia thư mục con theo cột `nhom`
-                     (kcn / dat-dai / dau-tu / moi-truong / lao-dong / dan-su).
+- laws/            : văn bản luật + metadata.csv, chia thư mục con theo cột `nhom`:
+                     kcn / dat-dai / dau-tu / moi-truong / lao-dong / dan-su /
+                     da-nang / ho-chi-minh / hai-quan / thue / ngoai-hoi /
+                     xay-dung / dau-thau / doanh-nghiep / quy-hoach / thuong-mai /
+                     dien-luc / lam-nghiep. Xem laws/SO-DO-VAN-BAN.md.
                      Agent KHÔNG BAO GIỜ tự thêm/sửa file trong laws/ — trừ khi
                      thực hiện lệnh duyệt trực tiếp của người dùng (skill law-fetch).
 - laws_staging/    : khu CHỜ DUYỆT — skill law-fetch tải luật từ nguồn chính thống

@@ -1,21 +1,38 @@
 # Bản đồ kho văn bản luật — kcn-review
 
-> Cập nhật: 2026-06-12 · **36 văn bản / 8 nhóm** · Nguồn sự thật về hiệu lực: `laws/metadata.csv`
+> Cập nhật: 2026-06-18 · **66 văn bản / 18 nhóm** · Nguồn sự thật về hiệu lực: `laws/metadata.csv`
 > Dành cho team legal: xem quan hệ thay thế/sửa đổi/hướng dẫn trước khi review và khi bổ sung văn bản mới.
-> Chú giải: 🟢 đang hiệu lực · 🟡 hiệu lực một phần / bị sửa đổi · 🔴 hết hiệu lực (giữ cho HĐ cũ) · ✏️ văn bản sửa đổi
+> Chú giải: 🟢 đang hiệu lực · 🟡 hiệu lực một phần / bị sửa đổi · 🔴 hết hiệu lực (giữ cho HĐ cũ) · ✏️ văn bản sửa đổi · ⏳ ban hành nhưng hiệu lực trong tương lai
 
 ## 1. Thống kê nhanh
 
 | Nhóm | Số VB | Đang hiệu lực | Hết hiệu lực | Ghi chú |
 |---|---|---|---|---|
-| dat-dai | 8 | 8 | 0 | đầy đủ nhất — luật + 5 NĐ + NQ gỡ vướng |
-| dau-tu | 9 | 8 | 1 (LĐT 2020) | gồm cả thuế TNDN + thuế tối thiểu toàn cầu |
-| moi-truong | 9 | 9 | 0 | gồm cả PCCC; chuỗi NĐ 08 sửa 2 lần |
+| dat-dai | 9 | 9 | 0 | đầy đủ nhất; + NĐ 96/2024 (hướng dẫn KD BĐS, kèm mẫu HĐ) |
+| dau-tu | 10 | 9 | 1 (LĐT 2020) | + NĐ 96/2026 hướng dẫn LĐT 143/2025 (⏳ hiệu lực 01/7/2026) |
+| moi-truong | 12 | 10 | 2 (PCCC cũ) | BVMT, PCCC mới, tài nguyên nước; PCCC cũ 136/2020+50/2024 cho HĐ trước 01/7/2025 |
+| hai-quan | 5 | 5 | 0 | 🆕 EPE: Luật Hải quan, Thuế XNK, TT 38/39 |
+| ngoai-hoi | 5 | 5 | 0 | 🆕 điều khoản giá USD; TT 32/2013 hạn chế ngoại tệ |
+| xay-dung | 4 | 4 | 0 | 🆕 Luật XD 2025 (⏳) + 3 NĐ |
 | dan-su | 4 | 4 | 0 | nền chung + trọng tài |
-| kcn | 2 | 1 | 1 (NĐ 82) | NĐ 35 đang chờ NĐ thay thế (dự thảo) |
+| dau-thau | 2 | 2 | 0 | 🆕 Luật Đấu thầu + chọn nhà đầu tư |
+| doanh-nghiep | 2 | 2 | 0 | 🆕 Luật DN 2020 + sửa 2025 |
+| quy-hoach | 2 | 1 | 1 | 🆕 Luật QH 2017; QH đô thị 2009 đã bị L47/2024 thay (THIẾU L47) |
 | da-nang | 3 | 3 | 0 | cơ chế đặc thù + Khu TMTD |
-| lao-dong | 1 | 1 | 0 | |
+| thue | 1 | 1 | 0 | 🆕 Luật Thuế GTGT 2024 |
+| kcn | 2 | 1 | 1 (NĐ 82) | NĐ 35 đang chờ NĐ thay thế (dự thảo) |
+| lao-dong | 2 | 2 | 0 | BLLĐ + 🆕 Luật Công đoàn |
+| dien-luc | 1 | 1 | 0 | 🆕 Luật Điện lực 2024 |
+| lam-nghiep | 1 | 1 | 0 | 🆕 Hòa Ninh có chuyển mục đích đất rừng |
+| thuong-mai | 1 | 1 | 0 | 🆕 Luật Thương mại 2005 |
 | ho-chi-minh | 1 | 1 | 0 | dùng đối chiếu |
+
+**Lưu ý ⏳ hiệu lực tương lai (tại 18/06/2026 chưa có hiệu lực):** Luật Xây dựng 2025,
+NĐ 96/2026 (hướng dẫn LĐT), NĐ 206/2026 — đều 01/07/2026. HĐ ký TRƯỚC mốc này vẫn
+áp dụng văn bản cũ (triage tự xử theo ngày ký).
+
+**🔴 GAP cần bổ sung:** Luật Quy hoạch đô thị & nông thôn 47/2024/QH15 (hiệu lực
+01/07/2025, thay Luật QH đô thị 2009) — kho có bản CŨ, thiếu bản MỚI. Tải khi cần.
 
 ## 2. Sơ đồ quan hệ (GitHub tự render)
 
@@ -108,25 +125,83 @@ flowchart TB
   ND35 -. "Đ.61 NĐ31 về hạ tầng KCN" .- ND31
 ```
 
+## 2b. Nhóm mới (batch 18/06/2026) — sơ đồ bổ sung
+
+```mermaid
+flowchart LR
+  classDef active fill:#e8f5e9,stroke:#2e7d32
+  classDef future fill:#ede7f6,stroke:#5e35b1
+  classDef expired fill:#ffebee,stroke:#c62828
+
+  subgraph NGOAIHOI["💱 ngoai-hoi (giá USD)"]
+    PL["🟢 Pháp lệnh Ngoại hối<br/>(hợp nhất + gốc 2005)"]:::active
+    TT32["🟢 TT 32/2013<br/>hạn chế dùng ngoại tệ"]:::active
+    TT06["🟢 TT 06/2019 (FDI)"]:::active
+    TT16["🟢 TT 16/2014 (TK ngoại tệ)"]:::active
+  end
+  subgraph HAIQUAN["🚢 hai-quan (EPE)"]
+    LHQ["🟢 Luật Hải quan 2014"]:::active
+    LTXNK["🟢 Luật Thuế XNK 2016"]:::active
+    TT38["🟢 TT 38/2015"]:::active
+    TT39["✏️ TT 39/2018 sửa 38"]:::active
+    LTXNK -.->|hướng dẫn| TT38
+    TT39 -->|sửa| TT38
+  end
+  subgraph XAYDUNG["🏗️ xay-dung"]
+    LXD["⏳ Luật Xây dựng 2025<br/>(01/7/2026)"]:::future
+    ND06["🟢 NĐ 06/2021 chất lượng"]:::active
+    ND175["🟢 NĐ 175/2024 hoạt động XD"]:::active
+    ND206["⏳ NĐ 206/2026 chi phí"]:::future
+  end
+  subgraph QUYHOACH["🗺️ quy-hoach"]
+    LQH["🟢 Luật Quy hoạch 2017"]:::active
+    LQHDT["🔴 Luật QH đô thị 2009<br/>(bị L47/2024 thay)"]:::expired
+    L47["⬜ Luật QH đô thị-NT 47/2024<br/>(THIẾU — cần tải)"]
+    LQHDT -.->|đã thay bởi| L47
+  end
+  subgraph KHAC["Khác"]
+    LDN["🟢 Luật Doanh nghiệp 2020 + sửa 76/2025"]:::active
+    LDTHAU["🟢 Luật Đấu thầu 2023 + NĐ 23/2024"]:::active
+    LDL["🟢 Luật Điện lực 2024"]:::active
+    LLN["🟢 Luật Lâm nghiệp 2017"]:::active
+    LTM["🟢 Luật Thương mại 2005"]:::active
+    LGTGT["🟢 Luật Thuế GTGT 2024"]:::active
+    LTNN["🟢 Luật Tài nguyên nước 2023"]:::active
+    LCD["🟢 Luật Công đoàn 2024"]:::active
+  end
+```
+
 ## 3. Ánh xạ loại hợp đồng → nhóm luật (dùng khi triage)
 
 | Loại HĐ | Nhóm bắt buộc | Nhóm mở rộng khi liên quan |
 |---|---|---|
-| Thuê đất / thuê lại đất | kcn, dat-dai | dau-tu, moi-truong, (+ nhóm địa phương) |
-| Thuê nhà xưởng | kcn, dan-su | dat-dai, moi-truong |
-| Dịch vụ hạ tầng/tiện ích | kcn, dan-su | moi-truong |
-| Gia công / dịch vụ SX | dan-su | lao-dong, dau-tu |
-| Mọi HĐ có điều khoản trọng tài/luật áp dụng | + dan-su (BLDS Đ.683, Luật TTTM) | |
-| Mọi HĐ có nội dung nước thải/PCCC | + moi-truong | |
+| Thuê đất / thuê lại đất | kcn, dat-dai | dau-tu, moi-truong, xay-dung, quy-hoach, (+ địa phương) |
+| Thuê nhà xưởng | kcn, dan-su | dat-dai, moi-truong, xay-dung |
+| Dịch vụ hạ tầng/tiện ích | kcn, dan-su | moi-truong, dien-luc |
+| Gia công / dịch vụ SX | dan-su | lao-dong, dau-tu, hai-quan |
+| Đấu thầu chọn nhà đầu tư | kcn, dau-thau | dat-dai, dau-tu |
+
+**Quy tắc cắt ngang (theo nội dung điều khoản, mọi loại HĐ):**
+| Điều khoản có... | Thêm nhóm |
+|---|---|
+| giá/phí ghi bằng ngoại tệ (USD...) | ngoai-hoi |
+| bên thuê là EPE / có XNK | hai-quan |
+| thuế GTGT, TNDN | thue, dau-tu |
+| xây dựng/nghiệm thu công trình | xay-dung |
+| chuyển mục đích đất rừng | lam-nghiep |
+| tư cách pháp nhân/người ký | doanh-nghiep |
+| trọng tài / luật áp dụng | dan-su (BLDS Đ.683, Luật TTTM) |
+| nước thải/PCCC | moi-truong |
 
 ## 4. Điểm cần theo dõi (cập nhật khi có)
 
 | # | Việc | Trạng thái 06/2026 |
 |---|---|---|
 | 1 | Nghị định **thay thế NĐ 35/2022** | Dự thảo đang lấy ý kiến (Bộ Tài chính) — khi ban hành: tải về, đặt NĐ 35 expiry + is_active=FALSE |
-| 2 | Nghị định **hướng dẫn Luật Đầu tư 143/2025** (thay NĐ 31) | Chưa ban hành |
-| 3 | 4 ngày hiệu lực lấy theo ngày ban hành, cần xác nhận | NĐ 291/2025, NQ 254/2025, NĐ 48/2026, QĐ 1142 |
-| 4 | Lớp **thông tư** cấp bộ | Chủ động KHÔNG tải đại trà — bổ sung theo vụ việc khi review phát sinh nhu cầu |
+| 2 | ✅ Nghị định **hướng dẫn Luật Đầu tư 143/2025** | ĐÃ CÓ: NĐ 96/2026 (hiệu lực 01/7/2026) |
+| 3 | 🔴 **Luật Quy hoạch đô thị & nông thôn 47/2024** | THIẾU — kho có bản 2009 đã hết hiệu lực; tải bản mới khi review HĐ liên quan quy hoạch |
+| 4 | Ngày hiệu lực một số NĐ lấy theo ngày ban hành | ND-23-2024, ND-175-2024 (ghi chú trong NGUON-GOC) — xác nhận khi cần dùng chính xác |
+| 5 | Lớp **thông tư** cấp bộ | Đã có TT hải quan (38/39), ngoại hối (06/16/32); bổ sung tiếp theo vụ việc |
 
 ## 5. Quy trình bổ sung văn bản mới (cho team legal)
 
