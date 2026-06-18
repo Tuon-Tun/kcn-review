@@ -1,6 +1,6 @@
 # Bản đồ kho văn bản luật — kcn-review
 
-> Cập nhật: 2026-06-18 · **66 văn bản / 18 nhóm** · Nguồn sự thật về hiệu lực: `laws/metadata.csv`
+> Cập nhật: 2026-06-18 · **67 văn bản / 18 nhóm** · Nguồn sự thật về hiệu lực: `laws/metadata.csv`
 > Dành cho team legal: xem quan hệ thay thế/sửa đổi/hướng dẫn trước khi review và khi bổ sung văn bản mới.
 > Chú giải: 🟢 đang hiệu lực · 🟡 hiệu lực một phần / bị sửa đổi · 🔴 hết hiệu lực (giữ cho HĐ cũ) · ✏️ văn bản sửa đổi · ⏳ ban hành nhưng hiệu lực trong tương lai
 
@@ -17,7 +17,7 @@
 | dan-su | 4 | 4 | 0 | nền chung + trọng tài |
 | dau-thau | 2 | 2 | 0 | 🆕 Luật Đấu thầu + chọn nhà đầu tư |
 | doanh-nghiep | 2 | 2 | 0 | 🆕 Luật DN 2020 + sửa 2025 |
-| quy-hoach | 2 | 1 | 1 | 🆕 Luật QH 2017; QH đô thị 2009 đã bị L47/2024 thay (THIẾU L47) |
+| quy-hoach | 3 | 2 | 1 | 🆕 Luật QH 2017 + Luật QH đô thị-NT 47/2024; bản 2009 hết hiệu lực |
 | da-nang | 3 | 3 | 0 | cơ chế đặc thù + Khu TMTD |
 | thue | 1 | 1 | 0 | 🆕 Luật Thuế GTGT 2024 |
 | kcn | 2 | 1 | 1 (NĐ 82) | NĐ 35 đang chờ NĐ thay thế (dự thảo) |
@@ -31,8 +31,8 @@
 NĐ 96/2026 (hướng dẫn LĐT), NĐ 206/2026 — đều 01/07/2026. HĐ ký TRƯỚC mốc này vẫn
 áp dụng văn bản cũ (triage tự xử theo ngày ký).
 
-**🔴 GAP cần bổ sung:** Luật Quy hoạch đô thị & nông thôn 47/2024/QH15 (hiệu lực
-01/07/2025, thay Luật QH đô thị 2009) — kho có bản CŨ, thiếu bản MỚI. Tải khi cần.
+**✅ GAP đã lấp (18/06):** Luật Quy hoạch đô thị & nông thôn 47/2024/QH15 (hiệu lực
+01/07/2025, thay Luật QH đô thị 2009) đã có trong kho (quy-hoach/LQHDTNT-2024).
 
 ## 2. Sơ đồ quan hệ (GitHub tự render)
 
@@ -155,9 +155,9 @@ flowchart LR
   end
   subgraph QUYHOACH["🗺️ quy-hoach"]
     LQH["🟢 Luật Quy hoạch 2017"]:::active
-    LQHDT["🔴 Luật QH đô thị 2009<br/>(bị L47/2024 thay)"]:::expired
-    L47["⬜ Luật QH đô thị-NT 47/2024<br/>(THIẾU — cần tải)"]
-    LQHDT -.->|đã thay bởi| L47
+    LQHDT["🔴 Luật QH đô thị 2009<br/>(hết hiệu lực 01/7/2025)"]:::expired
+    L47["🟢 Luật QH đô thị-NT 47/2024"]:::active
+    LQHDT -->|đã thay bởi| L47
   end
   subgraph KHAC["Khác"]
     LDN["🟢 Luật Doanh nghiệp 2020 + sửa 76/2025"]:::active
@@ -199,7 +199,7 @@ flowchart LR
 |---|---|---|
 | 1 | Nghị định **thay thế NĐ 35/2022** | Dự thảo đang lấy ý kiến (Bộ Tài chính) — khi ban hành: tải về, đặt NĐ 35 expiry + is_active=FALSE |
 | 2 | ✅ Nghị định **hướng dẫn Luật Đầu tư 143/2025** | ĐÃ CÓ: NĐ 96/2026 (hiệu lực 01/7/2026) |
-| 3 | 🔴 **Luật Quy hoạch đô thị & nông thôn 47/2024** | THIẾU — kho có bản 2009 đã hết hiệu lực; tải bản mới khi review HĐ liên quan quy hoạch |
+| 3 | ✅ **Luật Quy hoạch đô thị & nông thôn 47/2024** | ĐÃ CÓ (18/06): quy-hoach/LQHDTNT-2024, hiệu lực 01/7/2025 |
 | 4 | Ngày hiệu lực một số NĐ lấy theo ngày ban hành | ND-23-2024, ND-175-2024 (ghi chú trong NGUON-GOC) — xác nhận khi cần dùng chính xác |
 | 5 | Lớp **thông tư** cấp bộ | Đã có TT hải quan (38/39), ngoại hối (06/16/32); bổ sung tiếp theo vụ việc |
 

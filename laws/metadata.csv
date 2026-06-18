@@ -1,4 +1,4 @@
-doc_code,ten_van_ban,cap_hieu_luc,effective_date,expiry_date,thay_the_cho,is_active,nhom
+﻿doc_code,ten_van_ban,cap_hieu_luc,effective_date,expiry_date,thay_the_cho,is_active,nhom
 LDD-2024,Luat Dat dai 2024 (31/2024/QH15),3,2024-08-01,,LDD-2013,TRUE,dat-dai
 LKDBDS-2023,Luat Kinh doanh bat dong san 2023 (29/2023/QH15),3,2024-08-01,,LKDBDS-2014,TRUE,dat-dai
 ND-102-2024,Nghi dinh 102/2024/ND-CP huong dan Luat Dat dai,5,2024-08-01,,,TRUE,dat-dai
@@ -60,8 +60,9 @@ LTNN-2023,Luat Tai nguyen nuoc 2023 (28/2023/QH15),3,2024-07-01,,,TRUE,moi-truon
 ND-136-2020,Nghi dinh 136/2020/ND-CP huong dan Luat PCCC 2001,5,2021-01-10,2025-07-01,,FALSE,moi-truong
 ND-50-2024,Nghi dinh 50/2024/ND-CP sua ND 136/2020 (PCCC cu),5,2024-05-15,2025-07-01,,FALSE,moi-truong
 LQH-2017,Luat Quy hoach 2017 (21/2017/QH14),3,2019-01-01,,,TRUE,quy-hoach
-LQHDT-2009,Luat Quy hoach do thi 2009 (30/2009/QH12) - bi thay boi L47/2024,3,2010-01-01,2025-07-01,,FALSE,quy-hoach
+LQHDT-2009,Luat Quy hoach do thi 2009 (30/2009/QH12) - bi thay boi LQHDTNT-2024,3,2010-01-01,2025-07-01,,FALSE,quy-hoach
 LTM-2005,Luat Thuong mai 2005 (36/2005/QH11),3,2006-01-01,,,TRUE,thuong-mai
 LDL-2024,Luat Dien luc 2024 (61/2024/QH15),3,2025-02-01,,,TRUE,dien-luc
 LLN-2017,Luat Lam nghiep 2017 (16/2017/QH14),3,2019-01-01,,,TRUE,lam-nghiep
 LCD-2024,Luat Cong doan 2024 (50/2024/QH15),3,2025-07-01,,,TRUE,lao-dong
+LQHDTNT-2024,Luat Quy hoach do thi va nong thon 2024 (47/2024/QH15),3,2025-07-01,,LQHDT-2009,TRUE,quy-hoach
