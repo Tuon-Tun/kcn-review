@@ -64,6 +64,8 @@ Trên trang web có 3 ô đánh số sẵn, làm từ trên xuống:
 1. **Ô số 1**: bấm "Choose File" → chọn file hợp đồng (PDF hoặc Word) → bấm **Tải lên**
 2. **Ô số 2**: chọn việc cần làm:
    - 🔍 **Review hợp đồng** — tìm điều khoản rủi ro, có kiểm chứng trích dẫn
+   - 📋 **Đối chiếu mẫu chuẩn** — so HĐ khách hàng với mẫu chuẩn công ty (xem mục
+     "Mẫu hợp đồng" bên dưới); chỉ ra chỗ khách sửa bất lợi / bỏ điều khoản bảo vệ
    - 🌐 **Dịch VI↔EN** — dịch hợp đồng
    - 📑 **Đối chiếu song ngữ** — so bản Việt với bản Anh (cần tải lên cả 2 file)
 3. Chờ vài phút. Chữ chạy trên màn hình = nó đang làm việc. Cứ để yên.
@@ -75,6 +77,14 @@ Trên trang web có 3 ô đánh số sẵn, làm từ trên xuống:
 
 ### Tắt công cụ khi xong việc
 - Đóng cửa sổ đen là xong.
+
+### 📁 Mẫu hợp đồng (để đối chiếu chuẩn công ty)
+- Team Pháp chế tải **mẫu hợp đồng chuẩn** của công ty vào thư mục
+  `contracts/templates/<loại HĐ>/` rồi khai vào `contracts/templates/index.csv`.
+- Khi review HĐ khách hàng, bấm **📋 Đối chiếu mẫu chuẩn** → tool tự tìm mẫu khớp
+  loại HĐ và chỉ ra chỗ khách hàng sửa khác mẫu (bất lợi cho công ty / bỏ điều khoản bảo vệ).
+- Mẫu chuẩn **được commit lên GitHub** (cả team dùng chung 1 chuẩn); hợp đồng thật
+  thì KHÔNG. Hướng dẫn chi tiết: [contracts/templates/README.md](contracts/templates/README.md).
 
 ---
 
@@ -104,9 +114,10 @@ Trên trang web có 3 ô đánh số sẵn, làm từ trên xuống:
 <summary>📎 Thông tin kỹ thuật (dành cho người quản lý công cụ — bấm để mở)</summary>
 
 ### Kiến trúc
-- Engine: Claude Code chạy headless, nạp `CLAUDE.md` + 4 skill trong `.claude/skills/`:
-  `legal-review` (4 bước có kiểm chứng), `legal-translate`, `bilingual-compare`,
-  `law-fetch` (tải luật vào khu chờ duyệt `laws_staging/` — KHÔNG bao giờ tự ghi `laws/`).
+- Engine: Claude Code chạy headless, nạp `CLAUDE.md` + 5 skill trong `.claude/skills/`:
+  `legal-review` (4 bước có kiểm chứng), `template-compare` (đối chiếu mẫu chuẩn),
+  `legal-translate`, `bilingual-compare`, `law-fetch` (tải luật vào khu chờ duyệt
+  `laws_staging/` — KHÔNG bao giờ tự ghi `laws/`).
 - Web: `webapp/app.py` (Flask, cổng 8765). Mặc định chỉ máy này; đổi `HOST="0.0.0.0"`
   để mở LAN. Tự tìm Claude tại `%LOCALAPPDATA%\AnthropicClaude\claude.exe` hoặc PATH.
 

@@ -103,6 +103,7 @@ PROMPTS = {
     "review": 'Dùng skill legal-review để review hợp đồng "contracts/inbox/{f}". {extra}',
     "translate": 'Dùng skill legal-translate để dịch file "contracts/inbox/{f}". {extra}',
     "compare": 'Dùng skill bilingual-compare để đối chiếu song ngữ hai file "contracts/inbox/{f}" và "contracts/inbox/{f2}". {extra}',
+    "template": 'Dùng skill template-compare để đối chiếu hợp đồng "contracts/inbox/{f}" với mẫu chuẩn công ty trong contracts/templates/. {extra}',
 }
 
 
@@ -198,6 +199,7 @@ PAGE = """<!doctype html>
   <div class="row"><label>Ghi chú thêm (vd: ngày ký 2025-03-15):</label><input type="text" id="extra" placeholder="không bắt buộc"></div>
   <div class="row">
    <button onclick="run('review')">🔍 Review hợp đồng</button>
+   <button onclick="run('template')">📋 Đối chiếu mẫu chuẩn</button>
    <button onclick="run('translate')">🌐 Dịch VI↔EN</button>
    <button onclick="toggleCompare()">📑 Đối chiếu song ngữ…</button>
    <span id="status"></span>

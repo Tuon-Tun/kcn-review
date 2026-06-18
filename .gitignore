@@ -1,6 +1,8 @@
 # ⚠️ TẠM MỞ (2026-06-12) để chuyển giao toàn bộ dữ liệu sang máy khác.
 # Sau khi chuyển giao xong, BỎ comment các dòng dưới để chặn lại hợp đồng/báo cáo
 # (tài liệu mật — repo dù private cũng không nên chứa lâu dài).
+# LƯU Ý: chỉ chặn inbox/done/reports — contracts/templates/ (MẪU CHUẨN dùng chung)
+# KHÔNG nằm trong danh sách này nên vẫn được commit. Đừng thêm contracts/* chung chung.
 # contracts/inbox/*
 # contracts/done/*
 # reports/*
