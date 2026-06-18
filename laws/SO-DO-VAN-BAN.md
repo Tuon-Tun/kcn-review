@@ -173,6 +173,9 @@ flowchart LR
 
 ## 3. Ánh xạ loại hợp đồng → nhóm luật (dùng khi triage)
 
+> ⚙️ Bảng này ĐỒNG BỘ với skill `legal-review` (Bước 1) — bản trong skill là bản
+> MÁY thực thi khi chạy review. Sửa quy tắc triage thì sửa CẢ HAI nơi.
+
 | Loại HĐ | Nhóm bắt buộc | Nhóm mở rộng khi liên quan |
 |---|---|---|
 | Thuê đất / thuê lại đất | kcn, dat-dai | dau-tu, moi-truong, xay-dung, quy-hoach, (+ địa phương) |

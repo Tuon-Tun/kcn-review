@@ -7,7 +7,7 @@ nhận về báo cáo Word** chỉ ra các điều khoản rủi ro, kèm căn c
 **máy kiểm chứng nguyên văn** (trích dẫn bịa tự động bị loại).
 Nó cũng biết **dịch hợp đồng Việt–Anh** và **so sánh bản tiếng Việt với bản tiếng Anh**.
 
-Đi kèm sẵn **kho 36 văn bản luật** (đã rà hiệu lực đến 06/2026) — xem
+Đi kèm sẵn **kho 67 văn bản luật / 18 nhóm** (đã rà hiệu lực đến 06/2026) — xem
 [bản đồ văn bản](laws/SO-DO-VAN-BAN.md) để biết kho có gì và các quan hệ
 thay thế/sửa đổi. Hệ thống đã chạy thử end-to-end thành công.
 
@@ -47,7 +47,7 @@ pip install -r webapp/requirements.txt
 
 ### Bước 4: Kiểm tra
 - Mở thư mục `Documents` → thấy thư mục **kcn-review** là xong. 🎉
-- **Kho luật 36 văn bản đã có sẵn trong repo** — không phải nạp gì thêm.
+- **Kho luật 67 văn bản đã có sẵn trong repo** — không phải nạp gì thêm.
 
 ---
 
@@ -111,7 +111,7 @@ Trên trang web có 3 ô đánh số sẵn, làm từ trên xuống:
   để mở LAN. Tự tìm Claude tại `%LOCALAPPDATA%\AnthropicClaude\claude.exe` hoặc PATH.
 
 ### Kho luật
-- `laws/` — 36 văn bản / 8 nhóm, kèm `metadata.csv` (cấp hiệu lực, ngày hiệu lực,
+- `laws/` — 67 văn bản / 18 nhóm, kèm `metadata.csv` (cấp hiệu lực, ngày hiệu lực,
   is_active) và [SO-DO-VAN-BAN.md](laws/SO-DO-VAN-BAN.md) (bản đồ quan hệ + thống kê
   + quy trình bổ sung). Văn bản hết hiệu lực giữ lại cho HĐ ký giai đoạn cũ.
 - Cập nhật kho: gõ "rà soát hiệu lực" với agent, hoặc tải .docx từ thuvienphapluat

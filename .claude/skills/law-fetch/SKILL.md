@@ -45,3 +45,6 @@ description: Tự tìm, tải văn bản luật từ nguồn chính thống, con
 - Xoá file đã duyệt khỏi staging; KIỂM TRA LẠI staging phải sạch (không còn .txt
   của văn bản đã duyệt) — nếu dùng push_via_api.ps1 thì xác nhận cả trên remote.
 - Cập nhật laws/SO-DO-VAN-BAN.md (thống kê + sơ đồ quan hệ) cho văn bản mới.
+- CHẠY `python scripts/audit_kho.py` — phải báo "✅ KHO NHẤT QUÁN" trước khi
+  coi là xong (bắt file lệch tên / thiếu metadata / mồ côi). Đặt doc_code = tên
+  file (không dấu, dùng gạch nối) để audit khớp.
