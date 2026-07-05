@@ -10,8 +10,8 @@ NQ-254-2025,Nghi quyet 254/2025/QH15 go vuong thi hanh Luat Dat dai,3,2025-12-11
 LDT-2020,Luat Dau tu 2020 (61/2020/QH14),3,2021-01-01,2026-03-01,LDT-2014,FALSE,dau-tu
 LDT-2025,Luat Dau tu 2025 (143/2025/QH15),3,2026-03-01,,LDT-2020,TRUE,dau-tu
 LTTNDN-2025,Luat Thue thu nhap doanh nghiep 2025 (67/2025/QH15),3,2025-10-01,,LTTNDN-2008,TRUE,dau-tu
-ND-31-2021,Nghi dinh 31/2021/ND-CP huong dan Luat Dau tu,5,2021-03-26,,,TRUE,dau-tu
-ND-239-2025,Nghi dinh 239/2025/ND-CP sua ND 31/2021,5,2025-09-03,,,TRUE,dau-tu
+ND-31-2021,Nghi dinh 31/2021/ND-CP huong dan Luat Dau tu 2020 (het hieu luc),5,2021-03-26,2026-03-01,,FALSE,dau-tu
+ND-239-2025,Nghi dinh 239/2025/ND-CP sua ND 31/2021,5,2025-09-03,2026-03-01,,FALSE,dau-tu
 ND-182-2024,Nghi dinh 182/2024/ND-CP Quy Ho tro dau tu,5,2024-12-31,,,TRUE,dau-tu
 QD-29-2021,Quyet dinh 29/2021/QD-TTg uu dai dau tu dac biet,6,2021-10-06,,,TRUE,dau-tu
 NQ-107-2023,Nghi quyet 107/2023/QH15 thue toi thieu toan cau,3,2024-01-01,,,TRUE,dau-tu
@@ -47,13 +47,13 @@ TT-06-2019,Thong tu 06/2019/TT-NHNN quan ly ngoai hoi voi FDI,7,2019-09-06,,,TRU
 TT-16-2014,Thong tu 16/2014/TT-NHNN tai khoan ngoai te,7,2014-09-15,,,TRUE,ngoai-hoi
 TT-32-2013,Thong tu 32/2013/TT-NHNN han che su dung ngoai hoi tren lanh tho VN,7,2014-02-10,,,TRUE,ngoai-hoi
 LXD-2025,Luat Xay dung 2025 (135/2025/QH15),3,2026-07-01,,,TRUE,xay-dung
-ND-06-2021,Nghi dinh 06/2021/ND-CP quan ly chat luong thi cong xay dung,5,2021-01-26,,,TRUE,xay-dung
-ND-175-2024,Nghi dinh 175/2024/ND-CP quan ly hoat dong xay dung,5,2024-12-30,,,TRUE,xay-dung
+ND-06-2021,Nghi dinh 06/2021/ND-CP chat luong thi cong (thay boi ND 207/2026),5,2021-01-26,2026-07-01,,FALSE,xay-dung
+ND-175-2024,Nghi dinh 175/2024/ND-CP hoat dong xay dung (thay boi loat ND 6/2026; sua boi ND 14/2026),5,2024-12-30,2026-07-01,,FALSE,xay-dung
 ND-206-2026,Nghi dinh 206/2026/ND-CP quan ly chi phi dau tu xay dung,5,2026-07-01,,,TRUE,xay-dung
 LDTHAU-2023,Luat Dau thau 2023 (22/2023/QH15),3,2024-01-01,,,TRUE,dau-thau
 ND-23-2024,Nghi dinh 23/2024/ND-CP chon nha dau tu (dau thau),5,2024-02-27,,,TRUE,dau-thau
 ND-96-2024,Nghi dinh 96/2024/ND-CP chi tiet Luat KD BDS (kem mau HD),5,2024-08-01,,,TRUE,dat-dai
-ND-96-2026,Nghi dinh 96/2026/ND-CP huong dan Luat Dau tu 143/2025,5,2026-07-01,,,TRUE,dau-tu
+ND-96-2026,Nghi dinh 96/2026/ND-CP huong dan Luat Dau tu 143/2025 (D.11-12 tu 01/07/2026),5,2026-03-31,,ND-31-2021,TRUE,dau-tu
 LDN-2020,Luat Doanh nghiep 2020 (59/2020/QH14),3,2021-01-01,,,TRUE,doanh-nghiep
 L76-2025,Luat 76/2025/QH15 sua Luat Doanh nghiep,3,2025-07-01,,,TRUE,doanh-nghiep
 LTNN-2023,Luat Tai nguyen nuoc 2023 (28/2023/QH15),3,2024-07-01,,,TRUE,moi-truong

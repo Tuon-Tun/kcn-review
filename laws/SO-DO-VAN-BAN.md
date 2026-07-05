@@ -1,6 +1,6 @@
 # Bản đồ kho văn bản luật — kcn-review
 
-> Cập nhật: 2026-06-18 · **67 văn bản / 18 nhóm** · Nguồn sự thật về hiệu lực: `laws/metadata.csv`
+> Cập nhật: 2026-07-05 (rà soát hiệu lực sau mốc 01/07/2026) · **67 văn bản / 18 nhóm** · Nguồn sự thật về hiệu lực: `laws/metadata.csv`
 > Dành cho team legal: xem quan hệ thay thế/sửa đổi/hướng dẫn trước khi review và khi bổ sung văn bản mới.
 > Chú giải: 🟢 đang hiệu lực · 🟡 hiệu lực một phần / bị sửa đổi · 🔴 hết hiệu lực (giữ cho HĐ cũ) · ⏳ ban hành nhưng hiệu lực trong tương lai
 
@@ -9,11 +9,11 @@
 | Nhóm | Số VB | Đang hiệu lực | Hết hiệu lực | Ghi chú |
 |---|---|---|---|---|
 | dat-dai | 9 | 9 | 0 | đầy đủ nhất; + NĐ 96/2024 (hướng dẫn KD BĐS, kèm mẫu HĐ) |
-| dau-tu | 10 | 9 | 1 (LĐT 2020) | + NĐ 96/2026 hướng dẫn LĐT 143/2025 (⏳ hiệu lực 01/7/2026) |
+| dau-tu | 10 | 7 | 3 (LĐT 2020, NĐ 31, NĐ 239) | NĐ 96/2026 (hiệu lực 31/03/2026) thay NĐ 31 + NĐ 239 + NĐ 19/2025 |
 | moi-truong | 12 | 10 | 2 (PCCC cũ) | BVMT, PCCC mới, tài nguyên nước; PCCC cũ 136/2020+50/2024 cho HĐ trước 01/7/2025 |
 | hai-quan | 5 | 5 | 0 | 🆕 EPE: Luật Hải quan, Thuế XNK, TT 38/39 |
 | ngoai-hoi | 5 | 5 | 0 | 🆕 điều khoản giá USD; TT 32/2013 hạn chế ngoại tệ |
-| xay-dung | 4 | 4 | 0 | 🆕 Luật XD 2025 (⏳) + 3 NĐ |
+| xay-dung | 4 | 2 | 2 (NĐ 06, NĐ 175) | Luật XD 2025 + NĐ 206/2026 hiệu lực từ 01/7/2026; NĐ 06/175 bị loạt NĐ 6/2026 thay — **cần tải NĐ 207/210 mới** |
 | dan-su | 4 | 4 | 0 | nền chung + trọng tài |
 | dau-thau | 2 | 2 | 0 | 🆕 Luật Đấu thầu + chọn nhà đầu tư |
 | doanh-nghiep | 2 | 2 | 0 | 🆕 Luật DN 2020 + sửa 2025 |
@@ -27,9 +27,9 @@
 | thuong-mai | 1 | 1 | 0 | 🆕 Luật Thương mại 2005 |
 | ho-chi-minh | 1 | 1 | 0 | dùng đối chiếu |
 
-**Lưu ý ⏳ hiệu lực tương lai (tại 18/06/2026 chưa có hiệu lực):** Luật Xây dựng 2025,
-NĐ 96/2026 (hướng dẫn LĐT), NĐ 206/2026 — đều 01/07/2026. HĐ ký TRƯỚC mốc này vẫn
-áp dụng văn bản cũ (triage tự xử theo ngày ký).
+**Mốc 01/07/2026 ĐÃ QUA:** Luật Xây dựng 2025 + NĐ 206/2026 đã có hiệu lực (một số
+điều Luật XD từ 01/01/2026); NĐ 96/2026 hiệu lực từ 31/03/2026 (Đ.11-12 từ 01/7/2026).
+HĐ ký trước các mốc vẫn dùng văn bản cũ (triage theo ngày ký).
 
 ## 2. Quan hệ giữa các văn bản (chồng chéo cần biết khi review)
 
@@ -40,11 +40,14 @@ NĐ 96/2026 (hướng dẫn LĐT), NĐ 206/2026 — đều 01/07/2026. HĐ ký T
 | Luật Đầu tư 2020 | Luật Đầu tư 143/2025 | 01/03/2026 |
 | Luật QH đô thị 2009 | Luật QH đô thị & nông thôn 47/2024 | 01/07/2025 |
 | NĐ 136/2020 + NĐ 50/2024 (PCCC cũ) | Luật PCCC 55/2024 + NĐ 105/2025 | 01/07/2025 |
+| NĐ 31/2021 + NĐ 239/2025 (+ NĐ 19/2025 không có trong kho) | NĐ 96/2026 (hướng dẫn LĐT 143/2025) | 01/03/2026 |
+| NĐ 06/2021 (chất lượng thi công) | NĐ 207/2026 — **CHƯA CÓ trong kho** | 01/07/2026 |
+| NĐ 175/2024 (hoạt động XD; đã sửa bởi NĐ 14/2026) | loạt NĐ tháng 6/2026 — **CHƯA CÓ trong kho** | 01/07/2026 |
 
 ### 2.2. Sửa đổi/bổ sung — văn bản gốc VẪN hiệu lực, đọc KÈM bản sửa
 | Văn bản gốc | Bị sửa bởi |
 |---|---|
-| NĐ 31/2021 (hướng dẫn Luật Đầu tư) | NĐ 239/2025 |
+| ~~NĐ 31/2021~~ (đã hết hiệu lực 01/03/2026 cùng NĐ 239) | — |
 | NĐ 103/2024 (tiền thuê đất) | NĐ 291/2025 |
 | NĐ 151/2025 (phân quyền đất 2 cấp) | NĐ 226/2025 |
 | Luật BVMT 2020 | Luật 146/2025 |
@@ -102,13 +105,15 @@ NĐ 96/2026 (hướng dẫn LĐT), NĐ 206/2026 — đều 01/07/2026. HĐ ký T
 
 ## 4. Điểm cần theo dõi (cập nhật khi có)
 
-| # | Việc | Trạng thái 06/2026 |
+| # | Việc | Trạng thái 07/2026 |
 |---|---|---|
-| 1 | Nghị định **thay thế NĐ 35/2022** | Dự thảo đang lấy ý kiến (Bộ Tài chính) — khi ban hành: tải về, đặt NĐ 35 expiry + is_active=FALSE |
-| 2 | ✅ Nghị định **hướng dẫn Luật Đầu tư 143/2025** | ĐÃ CÓ: NĐ 96/2026 (hiệu lực 01/7/2026) |
-| 3 | ✅ **Luật Quy hoạch đô thị & nông thôn 47/2024** | ĐÃ CÓ (18/06): quy-hoach/LQHDTNT-2024, hiệu lực 01/7/2025 |
-| 4 | Ngày hiệu lực một số NĐ lấy theo ngày ban hành | ND-23-2024, ND-175-2024 (ghi chú trong NGUON-GOC) — xác nhận khi cần dùng chính xác |
-| 5 | Lớp **thông tư** cấp bộ | Đã có TT hải quan (38/39), ngoại hối (06/16/32); bổ sung tiếp theo vụ việc |
+| 1 | Nghị định **thay thế NĐ 35/2022** | Vẫn ở giai đoạn dự thảo (kiểm tra 05/07/2026) — khi ban hành: tải về, đặt NĐ 35 expiry + is_active=FALSE |
+| 2 | ✅ NĐ **hướng dẫn Luật Đầu tư 143/2025** | NĐ 96/2026, hiệu lực 31/03/2026 — thay NĐ 31 + 239 + 19/2025 |
+| 3 | 🔴 **Loạt NĐ hướng dẫn Luật Xây dựng 2025** (01/07/2026) | CHƯA CÓ: NĐ 207 (chất lượng — thay NĐ 06/2021) ⭐, NĐ 210 (hợp đồng XD) ⭐, NĐ 212/217 (thay NĐ 175), NĐ 209 (VLXD). Tải .docx TVPL |
+| 4 | ⚠️ **QĐ 29/2021 (ưu đãi đặc biệt)** | Căn cứ pháp lý (LĐT 2020 + NĐ 31) đều đã hết hiệu lực; chưa tìm thấy văn bản thay — DÙNG THẬN TRỌNG với dự án mới, chờ văn bản theo LĐT 143/2025 |
+| 5 | **Luật Đất đai sửa đổi** | Trình QH kỳ họp tháng 10/2026 (thủ tục rút gọn) — theo dõi |
+| 6 | Ngày hiệu lực một số NĐ lấy theo ngày ban hành | ND-23-2024 (ghi chú trong NGUON-GOC) — xác nhận khi cần |
+| 7 | Lớp **thông tư** cấp bộ | Bộ Xây dựng đã ban hành TT/QĐ hướng dẫn Luật XD 2025 — bổ sung theo vụ việc |
 
 ## 5. Quy trình bổ sung văn bản mới (cho team legal)
 
