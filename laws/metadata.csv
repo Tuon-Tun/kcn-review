@@ -48,7 +48,7 @@ TT-16-2014,Thong tu 16/2014/TT-NHNN tai khoan ngoai te,7,2014-09-15,,,TRUE,ngoai
 TT-32-2013,Thong tu 32/2013/TT-NHNN han che su dung ngoai hoi tren lanh tho VN,7,2014-02-10,,,TRUE,ngoai-hoi
 LXD-2025,Luat Xay dung 2025 (135/2025/QH15),3,2026-07-01,,,TRUE,xay-dung
 ND-06-2021,Nghi dinh 06/2021/ND-CP chat luong thi cong (thay boi ND 207/2026),5,2021-01-26,2026-07-01,,FALSE,xay-dung
-ND-175-2024,Nghi dinh 175/2024/ND-CP hoat dong xay dung (thay boi loat ND 6/2026; sua boi ND 14/2026),5,2024-12-30,2026-07-01,,FALSE,xay-dung
+ND-175-2024,Nghi dinh 175/2024/ND-CP hoat dong xay dung (thay boi ND 217/2026; sua boi ND 14/2026),5,2024-12-30,2026-07-01,,FALSE,xay-dung
 ND-206-2026,Nghi dinh 206/2026/ND-CP quan ly chi phi dau tu xay dung,5,2026-07-01,,,TRUE,xay-dung
 LDTHAU-2023,Luat Dau thau 2023 (22/2023/QH15),3,2024-01-01,,,TRUE,dau-thau
 ND-23-2024,Nghi dinh 23/2024/ND-CP chon nha dau tu (dau thau),5,2024-02-27,,,TRUE,dau-thau
@@ -66,3 +66,10 @@ LDL-2024,Luat Dien luc 2024 (61/2024/QH15),3,2025-02-01,,,TRUE,dien-luc
 LLN-2017,Luat Lam nghiep 2017 (16/2017/QH14),3,2019-01-01,,,TRUE,lam-nghiep
 LCD-2024,Luat Cong doan 2024 (50/2024/QH15),3,2025-07-01,,,TRUE,lao-dong
 LQHDTNT-2024,Luat Quy hoach do thi va nong thon 2024 (47/2024/QH15),3,2025-07-01,,LQHDT-2009,TRUE,quy-hoach
+ND-207-2026,Nghi dinh 207/2026/ND-CP chat luong thi cong bao tri (thay ND 06/2021),5,2026-07-01,,ND-06-2021,TRUE,xay-dung
+ND-209-2026,Nghi dinh 209/2026/ND-CP quan ly vat lieu xay dung,5,2026-07-01,,,TRUE,xay-dung
+ND-210-2026,Nghi dinh 210/2026/ND-CP hop dong xay dung,5,2026-07-01,,,TRUE,xay-dung
+ND-212-2026,Nghi dinh 212/2026/ND-CP dieu kien nang luc hoat dong XD + CSDL quoc gia,5,2026-07-01,,,TRUE,xay-dung
+ND-217-2026,Nghi dinh 217/2026/ND-CP quan ly hoat dong xay dung (thay ND 175/2024),5,2026-07-01,,ND-175-2024,TRUE,xay-dung
+LGDDT-2023,Luat Giao dich dien tu 2023 (20/2023/QH15) - HD dien tu chu ky so,3,2024-07-01,,,TRUE,dan-su
+LCTCTD-2024,Luat Cac to chuc tin dung 2024 (32/2024/QH15) - bao lanh ngan hang,3,2024-07-01,,,TRUE,ngoai-hoi

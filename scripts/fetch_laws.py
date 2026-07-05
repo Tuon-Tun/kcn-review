@@ -48,14 +48,10 @@ SOURCES = {
     "ND-239-2025": ("dau-tu",     "congbao", "https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-239-2025-nd-cp-46128.htm"),
 }
 
-# CHỜ BỔ SUNG đợt 7/2026 — loạt NĐ hướng dẫn Luật Xây dựng 2025 (hiệu lực 01/07/2026),
-# trang xdcs nạp JS nên script không lấy được; người dùng tải .docx từ TVPL:
-#   ND-207-2026 : chất lượng, thi công, bảo trì công trình (THAY NĐ 06/2021) ⭐
-#   ND-210-2026 : hợp đồng xây dựng ⭐ (quan trọng cho HĐ xây trên đất thuê KCN)
-#   ND-212/217-2026 : quản lý hoạt động XD / giấy phép (thay NĐ 175/2024) — xác nhận số khi tải
-#   ND-209-2026 : vật liệu xây dựng (tùy chọn)
-#   ND-14-2026  : sửa NĐ 175/2024 (chỉ cần cho HĐ ký 01-06/2026, tùy chọn)
-#   ND-19-2025  : thủ tục đầu tư đặc biệt (đã hết hiệu lực 01/03/2026; chỉ cần cho HĐ ký 02/2025-03/2026)
+# CHỜ BỔ SUNG (tùy chọn — chỉ cần khi review HĐ ký trong giai đoạn tương ứng):
+#   ND-14-2026  : sửa NĐ 175/2024 (HĐ ký 01-06/2026)
+#   ND-19-2025  : thủ tục đầu tư đặc biệt (HĐ ký 02/2025-03/2026)
+# ĐÃ ĐỦ 05/07/2026: trọn bộ 6 NĐ hướng dẫn Luật XD 2025 (206/207/209/210/212/217)
 
 # CHỜ BỔ SUNG (đã thử mọi nguồn chính thống truy cập được bằng script):
 #   QD-29-2021  : ĐÃ CÓ bản AI chép tay từ PDF scan người dùng cung cấp (2026-06-12)
